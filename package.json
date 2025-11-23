@@ -1,0 +1,36 @@
+{
+  "name": "ditup",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "",
+  "homepage": "https://ditup.org",
+  "license": "MIT",
+  "keywords": [
+    "do-it-together",
+    "collaboration",
+    "decentralized",
+    "social-network",
+    "solid-protocol",
+    "activitypub"
+  ],
+  "bugs": {
+    "url": "https://github.com/ditup/ditup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ditup/ditup.git"
+  },
+  "main": "index.js",
+  "workspaces": [
+    "packages/components"
+  ],
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.15"
+  }
+}
