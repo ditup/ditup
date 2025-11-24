@@ -6,6 +6,13 @@ hero:
   name: ditup
   text: do it together
   tagline: Turn ideas into collaborative action
+  image:
+    dark:
+      src: logo-white.svg
+      alt: ditup
+    light:
+      src: logo-black.svg
+      alt: ditup
   actions:
     - theme: brand
       text: What's ditup?

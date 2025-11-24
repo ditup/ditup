@@ -28,5 +28,11 @@ export default defineConfig({
       { icon: "matrix", link: "https://matrix.to/#/#ditup:matrix.org" },
       { icon: "github", link: "https://github.com/ditup/ditup" },
     ],
+
+    logo: {
+      light: "logo-black.svg",
+      dark: "logo-white.svg",
+    },
   },
+  head: [["link", { rel: "icon", href: "logo-white.svg" }]],
 });
