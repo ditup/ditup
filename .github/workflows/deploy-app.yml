@@ -1,0 +1,39 @@
+name: Deploy ditup app to external repo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+
+jobs:
+  # Build job
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build -w apps/ditup
+
+      - name: Deploy to external repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PAGES_DEPLOY_TOKEN}}
+          external_repository: ditup/app-deployment
+          publish_branch: main
+          publish_dir: apps/ditup/dist
+          cname: ditup.org
