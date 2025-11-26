@@ -1,48 +1,52 @@
+import "@awesome.me/webawesome/dist/components/dialog/dialog.js";
+import type WaDialog from "@awesome.me/webawesome/dist/components/dialog/dialog.js";
+import "@awesome.me/webawesome/dist/styles/themes/default.css";
 import { css, html, LitElement } from "lit";
-import { customElement } from "lit/decorators.js";
-import { unsafeHTML } from "lit/directives/unsafe-html.js";
+import { customElement, query } from "lit/decorators.js";
+import "./dtp-logo.js";
+import "./dtp-signin.js";
 import { reset } from "./styles/preflight";
-import ditupLogoBlack from "/logo-black.svg";
-import ditupLogoWhite from "/logo-white.svg";
-import ditupLogo from "/logo.svg";
-import ditupLogoRaw from "/logo.svg?raw";
 
 @customElement("dtp-landing")
-export class MyElement extends LitElement {
+export class DitupLanding extends LitElement {
   render() {
     return html`
       <h1>ditup</h1>
       <p class="subtitle">do it together</p>
       <p class="tagline">turn ideas into collaborative action</p>
-      <div class="logo">${unsafeHTML(ditupLogoRaw)}</div>
-      <!-- <picture>
-        <source srcset=${ditupLogoWhite} media="(prefers-color-scheme: dark)" />
-        <source
-          srcset=${ditupLogoBlack}
-          media="(prefers-color-scheme: light)"
-        />
-        <img src=${ditupLogo} height=${200} class="logo" />
-      </picture> -->
+      <dtp-logo></dtp-logo>
       <a class="button primary" href="https://docs.ditup.org">learn more</a>
+      <button class="button" @click=${this._startSignin}>sign in</button>
+
+      <wa-dialog label="Sign in" id="signin-dialog">
+        <dtp-signin></dtp-signin>
+      </wa-dialog>
     `;
+  }
+
+  @query("#signin-dialog")
+  _signinDialog?: WaDialog;
+
+  private _startSignin() {
+    if (this._signinDialog) this._signinDialog.open = true;
   }
 
   static styles = [
     reset,
     css`
+      #signin-dialog,
+      ::part(dialog) {
+        color: var(--color-text);
+      }
+
       :host {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 0.75rem;
-      }
-
-      h1,
-      .subtitle,
-      .tagline {
-        text-align: center;
+        min-height: 100vh;
       }
 
       h1 {
@@ -68,6 +72,8 @@ export class MyElement extends LitElement {
         padding: 0.5rem 1rem;
         background-color: var(--color-surface);
         border-radius: var(--border-radius);
+        font-size: 1.25rem;
+        cursor: pointer;
       }
 
       .button:hover {
@@ -76,7 +82,6 @@ export class MyElement extends LitElement {
 
       .button.primary {
         background-color: var(--color-primary);
-        font-size: 1.25rem;
       }
     `,
   ];

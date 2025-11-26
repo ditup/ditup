@@ -33,9 +33,15 @@
 
     /* Backgrounds */
     --color-background: #242424;
-    --color-surface: #454545;
+    --color-surface: #333;
 
     /* Borders */
     --color-border: #065f46;
   }
+}
+
+:root {
+  --wa-color-surface-raised: var(--color-surface);
+  --wa-color-text-raised: var(--color-text);
+  --wa-color-text-normal: var(--color-text);
 }
