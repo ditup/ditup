@@ -42,6 +42,7 @@
 
 :root {
   --wa-color-surface-raised: var(--color-surface);
+  --wa-color-surface-default: var(--color-background);
   --wa-color-text-raised: var(--color-text);
   --wa-color-text-normal: var(--color-text);
 }

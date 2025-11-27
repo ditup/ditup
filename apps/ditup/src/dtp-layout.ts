@@ -2,6 +2,7 @@ import { logout } from "@inrupt/solid-client-authn-browser";
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import encodeURIComponent from "strict-uri-encode";
+import "./dtp-avatar.js";
 import "./dtp-logo.js";
 
 @customElement("dtp-layout")
@@ -11,7 +12,9 @@ export class DitupLayout extends LitElement {
   render() {
     return html`<header class="header">
         <a href="/"><dtp-logo class="logo"></dtp-logo></a>
-        <a href="/profile/${encodeURIComponent(this.webid)}">${this.webid}</a>
+        <a href="/profile/${encodeURIComponent(this.webid)}">
+          <dtp-avatar webid=${this.webid}></dtp-avatar>
+        </a>
         <button @click=${this._signout}>sign out</button>
       </header>
       <main>
@@ -27,6 +30,10 @@ export class DitupLayout extends LitElement {
     .logo {
       --size: 2rem;
       justify-self: flex-start;
+    }
+
+    dtp-avatar {
+      --size: 2rem;
     }
 
     .header {
