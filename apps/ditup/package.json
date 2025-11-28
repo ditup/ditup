@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "e2e": "playwright test",
+    "css": "community-solid-server -p 4000 -c ./tests/css-config.json"
   },
   "dependencies": {
     "@awesome.me/webawesome": "^3.0.0",
@@ -21,6 +23,10 @@
     "strict-uri-encode": "^2.0.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@solid/community-server": "^7.1.7",
+    "@types/node": "^24.10.1",
+    "css-authn": "^0.3.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.4"
   }
