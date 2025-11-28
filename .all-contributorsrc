@@ -20,6 +20,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "talitadzikzlasu",
+      "name": "Talita",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63733780?v=4",
+      "profile": "https://github.com/talitadzikzlasu",
+      "contributions": [
+        "design",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,

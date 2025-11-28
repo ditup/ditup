@@ -85,6 +85,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://mrkvon.org/"><img src="https://avatars.githubusercontent.com/u/7449720?v=4?s=100" width="100px;" alt="mrkvon"/><br /><sub><b>mrkvon</b></sub></a><br /><a href="#ideas-mrkvon" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/ditup/ditup/commits?author=mrkvon" title="Code">💻</a> <a href="https://github.com/ditup/ditup/commits?author=mrkvon" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/talitadzikzlasu"><img src="https://avatars.githubusercontent.com/u/63733780?v=4?s=100" width="100px;" alt="Talita"/><br /><sub><b>Talita</b></sub></a><br /><a href="#design-talitadzikzlasu" title="Design">🎨</a> <a href="#ideas-talitadzikzlasu" title="Ideas, Planning, & Feedback">🤔</a></td>
     </tr>
   </tbody>
 </table>
