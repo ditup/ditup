@@ -32,8 +32,14 @@ export class DitupSignin extends LitElement {
   }
 
   private async _confirm(e: CustomEvent<{ data: { webidOrIdp: string } }>) {
+    // save current url to session storage so we can go back to it after login
+    globalThis.sessionStorage.setItem("previousUrl", window.location.href);
+
     await login({
       oidcIssuer: e.detail.data.webidOrIdp,
+      redirectUrl: new URL("/", window.location.href).toString(),
+      clientName: "ditup",
+      clientId: new URL("/clientid.jsonld", window.location.href).toJSON(),
     });
   }
 }

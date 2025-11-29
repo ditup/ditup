@@ -25,21 +25,63 @@ export class DitupMain extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
+
+    // authenticate after redirect
     handleIncomingRedirect({
       restorePreviousSession: true,
     }).then((sessionInfo) => {
       this._info = sessionInfo;
     });
+
     this._session = getDefaultSession();
     this._session.events.addListener(EVENTS.LOGOUT, this._updateSessionInfo);
+
+    // redirect to previous url after refresh
+    this._session.events.addListener(EVENTS.SESSION_RESTORED, this._redirect);
+
+    // redirect to previous url after login
+    this._session.events.addListener(
+      EVENTS.LOGIN,
+      this._redirectFromSessionStorage
+    );
+
+    // clear previous url after error
+    this._session.events.addListener(EVENTS.ERROR, this._clearPreviousUrl);
+  }
+
+  protected _redirect(url: string | null) {
+    if (url && new URL(url).hostname === globalThis.location.hostname)
+      // TODO figure out whether to use pushState or replaceState
+      globalThis.history.replaceState(null, "", url);
+  }
+
+  protected _redirectFromSessionStorage = () => {
+    const previousUrl = globalThis.sessionStorage.getItem("previousUrl");
+    globalThis.sessionStorage.removeItem("previousUrl");
+    this._redirect(previousUrl);
+  };
+
+  protected _clearPreviousUrl() {
+    globalThis.sessionStorage.removeItem("previousUrl");
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
+
+    // clear event listeners
     this._session?.events.removeListener(
       EVENTS.LOGOUT,
       this._updateSessionInfo
     );
+    this._session?.events.removeListener(
+      EVENTS.SESSION_RESTORED,
+      this._redirect
+    );
+    this._session?.events.removeListener(
+      EVENTS.LOGIN,
+      this._redirectFromSessionStorage
+    );
+    this._session?.events.removeListener(EVENTS.ERROR, this._clearPreviousUrl);
   }
 
   render() {

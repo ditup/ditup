@@ -26,7 +26,7 @@
     "@playwright/test": "^1.57.0",
     "@solid/community-server": "^7.1.7",
     "@types/node": "^24.10.1",
-    "css-authn": "^0.3.0",
+    "css-authn": "^0.4.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.4"
   }

@@ -13,6 +13,9 @@ jobs:
   # Build job
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -28,6 +31,8 @@ jobs:
 
       - name: Build
         run: npm run build -w apps/ditup
+        env:
+          VITE_BASE_URL: ${{ vars.VITE_BASE_URL }}
 
       - name: Deploy to external repo
         uses: peaceiris/actions-gh-pages@v3
