@@ -79,6 +79,8 @@ export default defineConfig({
   webServer: [
     {
       command: "npm run dev",
+      // run in production mode to have static clientid
+      env: { NODE_ENV: "production" },
       url: "http://localhost:5173",
       // reuseExistingServer: !process.env.CI,
       reuseExistingServer: true,

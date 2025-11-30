@@ -1,12 +1,24 @@
 import "@awesome.me/webawesome/dist/components/avatar/avatar.js";
 import "@awesome.me/webawesome/dist/components/popover/popover.js";
-import { LdhopEngine, run, type LdhopQuery } from "@ldhop/core";
+import { type LdhopQuery, type Variable } from "@ldhop/core";
 import { css, html, LitElement, nothing, type PropertyValues } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { ifDefined } from "lit/directives/if-defined.js";
 import type { Term } from "n3";
 import { foaf, rdfs, space } from "rdf-namespaces";
-import { authFetch } from "./dtp-signin";
+import { unauthStore } from "./data";
+import { QueryRunner } from "./data/query-runner";
+import type {
+  ResourceStore,
+  ResourceStoreUnsubscribe,
+} from "./data/resource-store";
+import {
+  type Interest,
+  isInterest,
+  processWikidataEntity,
+  type WikidataEntitiesResult,
+  wikidataRegex,
+} from "./data/wikidata";
 
 const query: LdhopQuery<
   "?webid" | "?profileDocument" | "?preferencesFile" | "?interest"
@@ -43,27 +55,43 @@ const query: LdhopQuery<
 ];
 
 @customElement("dtp-interests")
-export class DitupName extends LitElement {
+export class DitupInterests extends LitElement {
   @property() webid?: string;
   @state() protected _interests?: Term[];
+  @property({ attribute: false }) store?: ResourceStore;
+
+  private handleVariable = (v: Variable, _: unknown, all: Set<Term>) => {
+    if (v === "?interest") this._interests = Array.from(all);
+  };
+  private _runner = new QueryRunner(() => this.store!, query, {
+    onVariableAdded: this.handleVariable,
+    onVariableRemoved: this.handleVariable,
+  });
 
   protected async updated(map: PropertyValues) {
-    if (map.has("webid")) {
+    if (map.has("webid") || map.has("store")) {
+      this._interests = [];
       if (this.webid) {
-        const engine = new LdhopEngine(query, {
-          "?webid": new Set([this.webid]),
-        });
-        await run(engine, authFetch);
-        this._interests = Array.from(engine.getVariable("?interest"));
+        this._runner.run({ "?webid": new Set([this.webid]) });
+      } else {
+        this._runner.destroy();
       }
     }
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this._runner.destroy();
   }
 
   render() {
     return html`${Array.from(this._interests ?? new Set<Term>()).map(
       (interest) =>
         interest.termType === "NamedNode"
-          ? html`<dtp-topic uri=${interest.id}></dtp-topic>`
+          ? html`<dtp-topic
+              uri=${interest.id}
+              .store=${unauthStore}
+            ></dtp-topic>`
           : undefined
     )}`;
   }
@@ -82,12 +110,43 @@ export class DitupTopic extends LitElement {
   @property() uri!: string;
   @property() language = "en";
   @state() protected _data: Interest = { uri: this.uri, aliases: [] };
+  @state() store?: ResourceStore;
+
+  private _unsubscribes = new Map<string, ResourceStoreUnsubscribe>();
 
   protected async updated(changedProperties: PropertyValues) {
-    if (changedProperties.has("uri")) {
-      const result = await readInterest(this.uri, this.language);
-      if (isInterest(result)) this._data = result;
+    if (
+      changedProperties.has("uri") ||
+      changedProperties.has("store") ||
+      changedProperties.has("language")
+    ) {
+      if (!this.store) return;
+      this._data = { uri: this.uri, aliases: [] };
+      const id = this.uri.match(wikidataRegex)?.[2] ?? "";
+      // currently, we resolve only wikidata interests
+      if (!id) return;
+
+      const wdapiuri = `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${id}&languages=${this.language}&format=json&origin=*`;
+      const unsubscribe = this.store?.subscribe(wdapiuri, {}, (result) => {
+        if (!result.loading && !result.error) {
+          const outcome = processWikidataEntity({
+            id,
+            uri: this.uri,
+            data: result.data as WikidataEntitiesResult,
+            language: this.language,
+          });
+          if (isInterest(outcome)) this._data = outcome;
+        }
+      });
+      this._unsubscribes.get(wdapiuri)?.();
+      this._unsubscribes.set(wdapiuri, unsubscribe);
     }
+  }
+
+  disconnectedCallback(): void {
+    super.disconnectedCallback();
+    const unsubscribes = this._unsubscribes.values();
+    for (const u of unsubscribes) u();
   }
 
   render() {
@@ -121,112 +180,4 @@ export class DitupTopic extends LitElement {
       </wa-popover>
     `;
   }
-}
-
-// TODO refactor out of here
-
-type EmptyObject = Record<string, never>;
-type URI = string;
-export type Interest = {
-  id?: string;
-  uri: URI;
-  label?: string;
-  description?: string;
-  aliases: string[];
-  image?: URI;
-  officialWebsite?: URI;
-};
-function isInterest(x: Interest | EmptyObject): x is Interest {
-  return "uri" in x;
-}
-
-const readInterest = async (
-  uri: URI,
-  language: string
-): Promise<Interest | EmptyObject> => {
-  const id = uri.match(wikidataRegex)?.[2] ?? "";
-
-  // currently, we resolve only wikidata interests
-  if (!id) return {};
-
-  const res = await fetch(
-    `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${id}&languages=${language}&format=json&origin=*`
-  );
-
-  if (!res.ok) throw new Error("Fetching interest failed");
-
-  const data: WikidataEntitiesResult = await res.json();
-
-  if (!data || !data.entities) return {};
-
-  const entity = data.entities[id];
-
-  if (!entity) return {};
-
-  const label = entity.labels[language]?.value;
-  const description = entity.descriptions[language]?.value;
-  const imageString = (entity.claims.P18 ?? []).map(
-    (p) => p.mainsnak.datavalue?.value
-  )[0];
-  const logoImageString = (entity.claims.P154 ?? []).map(
-    (p) => p.mainsnak.datavalue?.value
-  )[0];
-  const image =
-    imageString &&
-    `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
-      imageString
-    )}?width=300`;
-
-  const logoImage =
-    logoImageString &&
-    `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(
-      logoImageString
-    )}?width=300`;
-  const officialWebsite = (entity.claims.P856 ?? []).map(
-    (p) => p.mainsnak.datavalue?.value
-  )[0];
-  const aliases = (entity.aliases[language] ?? []).map(({ value }) => value);
-
-  return {
-    id,
-    uri,
-    label,
-    aliases,
-    description,
-    officialWebsite,
-    image: logoImage || image,
-  };
-};
-
-const wikidataRegex =
-  /^https?:\/\/(w{3}\.)?wikidata\.org\/entity\/([A-Z0-9]*)\/?$/;
-
-interface WikidataEntitiesResult {
-  entities: {
-    [key: string]: {
-      labels: { [language: string]: { value: string } };
-      descriptions: { [language: string]: { value: string } };
-      aliases: { [language: string]: { value: string }[] };
-      claims: {
-        P18?: {
-          mainsnak: {
-            datavalue?: { value: string };
-            datatype: "commonsMedia";
-          };
-        }[];
-        P154?: {
-          mainsnak: {
-            datavalue?: { value: string };
-            datatype: "commonsMedia";
-          };
-        }[];
-        P856?: {
-          mainsnak: {
-            datavalue?: { value: string };
-            datatype: "url";
-          };
-        }[];
-      };
-    };
-  };
 }

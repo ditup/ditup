@@ -39,7 +39,9 @@ export class DitupSignin extends LitElement {
       oidcIssuer: e.detail.data.webidOrIdp,
       redirectUrl: new URL("/", window.location.href).toString(),
       clientName: "ditup",
-      clientId: new URL("/clientid.jsonld", window.location.href).toJSON(),
+      clientId: import.meta.env.PROD
+        ? new URL("/clientid.jsonld", window.location.href).toJSON()
+        : undefined,
     });
   }
 }
