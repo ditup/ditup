@@ -19,7 +19,7 @@ const createRandomAccount = async (): Promise<User> => {
 };
 
 test.describe("Sign in", () => {
-  test("sign in", async ({ page }) => {
+  test("sign in", async ({ page, context }) => {
     const user = await createRandomAccount();
     await signin({ page, user, url: "/", clientId: "/clientid.jsonld" });
     await expect(page.locator("dtp-router")).toContainText("home");
@@ -55,6 +55,16 @@ test.describe("Sign in", () => {
     await page.goto(url);
     await expect(page).toHaveURL(url);
   });
+
+  test("remember last selected login", async ({ page }) => {
+    const user = await createRandomAccount();
+    const url = `/profile/${strict_uri_encode(user.webId)}`;
+    await signin({ page, user });
+    await page.getByRole("button", { name: "sign out" }).click();
+    await page.goto("/");
+    await page.getByRole("button", { name: "sign in" }).click();
+    await expect(page.getByRole("textbox")).toHaveValue(user.oidcIssuer);
+  });
 });
 
 const signin = async ({
@@ -70,7 +80,6 @@ const signin = async ({
 }) => {
   await page.goto(url);
   await page.getByRole("button", { name: "sign in" }).click();
-  await page.getByRole("textbox").click();
   await page.getByRole("textbox").fill(user.oidcIssuer);
   await page.getByRole("button", { name: "continue" }).click();
   await expect(page).toHaveURL(
