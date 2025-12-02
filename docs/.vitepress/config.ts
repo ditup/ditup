@@ -18,7 +18,19 @@ export default defineConfig({
       {
         text: "Planning",
         items: [
-          { text: "Roadmap", link: "/roadmap" },
+          {
+            text: "Roadmap",
+            link: "/roadmap/",
+            items: [
+              { text: "1. My profile and interests", link: "/roadmap/profile" },
+              {
+                text: "2. Save and discover ideas and issues",
+                link: "/roadmap/ideas-issues",
+              },
+              { text: "3. Find like-minded people" },
+              { text: "4. Projects and beyond" },
+            ],
+          },
           { text: "Architecture", link: "/architecture" },
         ],
       },
