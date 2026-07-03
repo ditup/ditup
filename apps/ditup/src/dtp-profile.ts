@@ -1,17 +1,17 @@
-import "@awesome.me/webawesome/dist/components/copy-button/copy-button.js";
+import '@awesome.me/webawesome/dist/components/copy-button/copy-button.js'
 // import "@awesome.me/webawesome/dist/components/qr-code/qr-code.js";
-import { css, html, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import { ifDefined } from "lit/directives/if-defined.js";
-import { store } from "./data/index.js";
-import "./dtp-avatar.js";
-import "./dtp-interests.js";
-import "./dtp-name.js";
+import { css, html, LitElement } from 'lit'
+import { customElement, property } from 'lit/decorators.js'
+import { ifDefined } from 'lit/directives/if-defined.js'
+import { store } from './data/index.js'
+import './dtp-avatar.js'
+import './dtp-interests.js'
+import './dtp-name.js'
 
-@customElement("dtp-profile")
+@customElement('dtp-profile')
 export class DitupProfile extends LitElement {
   @property()
-  webid?: string;
+  webid?: string
 
   render() {
     return html`
@@ -30,7 +30,7 @@ export class DitupProfile extends LitElement {
         webid=${ifDefined(this.webid)}
         .store=${store}
       ></dtp-interests>
-    `;
+    `
   }
 
   static styles = css`
@@ -44,5 +44,5 @@ export class DitupProfile extends LitElement {
       gap: 1rem;
       align-items: center;
     }
-  `;
+  `
 }

@@ -132,7 +132,7 @@ Each phase has matching messaging. Don't promise discovery before users exist. D
 
 **Honest framing:**
 
-- "Growing community of [X] documenters in [Y] cities"
+- "Growing community of \[X] documenters in \[Y] cities"
 - "Early community - help shape what this becomes"
 - Transparency about user density in specific areas
 
@@ -152,7 +152,7 @@ Each phase has matching messaging. Don't promise discovery before users exist. D
 **Call to action:**
 
 - "Create your public profile"
-- "See who else cares about [topic] near you"
+- "See who else cares about \[topic] near you"
 
 ### Success criteria before Phase 3
 
@@ -217,7 +217,7 @@ Each phase has matching messaging. Don't promise discovery before users exist. D
 **Honest framing:**
 
 - Share specific success stories as they happen
-- "X actions completed in [city]"
+- "X actions completed in \[city]"
 - "First park cleanup organized through ditup"
 
 **Target audience:**
@@ -410,7 +410,7 @@ Each phase has matching messaging. Don't promise discovery before users exist. D
 
 ### Expand with evidence
 
-- "This worked in [City A]"
+- "This worked in \[City A]"
 - Specific numbers: "12 people, 3 actions, 1 park cleanup"
 - Invite next city with real proof
 

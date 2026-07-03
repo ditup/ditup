@@ -10,7 +10,7 @@ All user data lives on user's Solid pod. Index server stores pointers and aggreg
 
 ## Namespaces
 
-```
+```txt
 @prefix ditup: <https://ditup.org/ontology#> .
 @prefix solid: <http://www.w3.org/ns/solid/terms#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -205,7 +205,7 @@ Location: Organizer's pod at `/public/ditup/outcomes/`
 
 ### User pod layout
 
-```
+```txt
 /profile
   card#me              # WebID profile
 
@@ -285,7 +285,7 @@ Index stores pointers and aggregated data for discovery. Does not store primary 
 
 ## Entity Relationships
 
-```
+```txt
 Profile
   └── creates → Issue (many)
   └── creates → Idea (many)

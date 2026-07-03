@@ -44,7 +44,7 @@
 
 **US-1.1: Login with existing Solid pod**
 
-```
+```txt
 As Maria
 I want to login with my existing Solid pod
 So that I can start using ditup without creating new account
@@ -59,7 +59,7 @@ Acceptance:
 
 **US-1.2: Create new Solid account**
 
-```
+```txt
 As Alex
 I want to create a Solid pod during signup
 So that I don't need to understand Solid before starting
@@ -73,7 +73,7 @@ Acceptance:
 
 **US-1.3: Logout**
 
-```
+```txt
 As any user
 I want to logout
 So that others on shared device can't access my data
@@ -91,7 +91,7 @@ Acceptance:
 
 **US-2.1: Create basic profile**
 
-```
+```txt
 As Maria
 I want to set up my profile with location and interests
 So that my documented content has context
@@ -106,7 +106,7 @@ Acceptance:
 
 **US-2.2: Hide profile from discovery**
 
-```
+```txt
 As Alex
 I want to keep my profile hidden
 So that I can use the documentation features without being discoverable
@@ -120,7 +120,7 @@ Acceptance:
 
 **US-2.3: Edit profile**
 
-```
+```txt
 As Maria
 I want to update my profile later
 So that I can change location or interests over time
@@ -138,7 +138,7 @@ Acceptance:
 
 **US-3.1: Create issue quickly**
 
-```
+```txt
 As Maria
 I want to document an issue I notice in under 30 seconds
 So that I can capture observations without breaking my flow
@@ -153,7 +153,7 @@ Acceptance:
 
 **US-3.2: Add photo to issue**
 
-```
+```txt
 As Alex
 I want to take a photo of a problem and attach it
 So that I have visual evidence
@@ -168,7 +168,7 @@ Acceptance:
 
 **US-3.3: Pin issue to map**
 
-```
+```txt
 As Maria
 I want to mark exactly where the issue is
 So that I can find it later and so the location is precise
@@ -183,7 +183,7 @@ Acceptance:
 
 **US-3.4: Tag issue with topics**
 
-```
+```txt
 As Maria
 I want to tag my issue with relevant topics
 So that I can filter and organize my observations
@@ -198,7 +198,7 @@ Acceptance:
 
 **US-3.5: Keep issue private**
 
-```
+```txt
 As Alex
 I want to keep some issues private
 So that I can document without anyone else seeing
@@ -213,7 +213,7 @@ Acceptance:
 
 **US-3.6: Make issue public**
 
-```
+```txt
 As Maria
 I want to publish some issues publicly
 So that others might eventually discover them
@@ -228,7 +228,7 @@ Acceptance:
 
 **US-3.7: Edit issue**
 
-```
+```txt
 As Maria
 I want to edit an issue I documented
 So that I can add details or correct mistakes
@@ -242,7 +242,7 @@ Acceptance:
 
 **US-3.8: Delete issue**
 
-```
+```txt
 As Alex
 I want to delete an issue I no longer need
 So that my archive stays relevant
@@ -256,7 +256,7 @@ Acceptance:
 
 **US-3.9: Archive issue**
 
-```
+```txt
 As Maria
 I want to mark an issue as resolved/archived
 So that it's not cluttering my active view but I keep the record
@@ -275,7 +275,7 @@ Acceptance:
 
 **US-4.1: Create idea**
 
-```
+```txt
 As Maria
 I want to document a solution idea
 So that I don't forget it and can develop it over time
@@ -290,7 +290,7 @@ Acceptance:
 
 **US-4.2: Link idea to issue**
 
-```
+```txt
 As Maria
 I want to link my idea to an issue I documented
 So that solutions are connected to problems
@@ -305,7 +305,7 @@ Acceptance:
 
 **US-4.3: Document resources needed**
 
-```
+```txt
 As Maria
 I want to note what would be needed to implement my idea
 So that I can plan ahead
@@ -323,7 +323,7 @@ Acceptance:
 
 **US-5.1: View all issues as list**
 
-```
+```txt
 As Maria
 I want to see all my issues in a list
 So that I can browse what I've documented
@@ -338,7 +338,7 @@ Acceptance:
 
 **US-5.2: View all issues on map**
 
-```
+```txt
 As Maria
 I want to see my issues plotted on a map
 So that I can understand geographic patterns
@@ -353,7 +353,7 @@ Acceptance:
 
 **US-5.3: Filter issues**
 
-```
+```txt
 As Maria
 I want to filter my issues by topic, status, visibility
 So that I can find specific items
@@ -368,7 +368,7 @@ Acceptance:
 
 **US-5.4: Search issues**
 
-```
+```txt
 As Maria
 I want to search my issues by keyword
 So that I can find specific items quickly
@@ -383,7 +383,7 @@ Acceptance:
 
 **US-5.5: View ideas alongside issues**
 
-```
+```txt
 As Maria
 I want to see my ideas in the same dashboard
 So that I have one place for all my civic documentation
@@ -397,7 +397,7 @@ Acceptance:
 
 **US-5.6: See basic statistics**
 
-```
+```txt
 As Maria
 I want to see summary counts of my documentation
 So that I can understand my overall activity
@@ -416,7 +416,7 @@ Acceptance:
 
 **US-6.1: Work offline**
 
-```
+```txt
 As Alex
 I want to create issues while offline
 So that I can document when I don't have signal
@@ -431,7 +431,7 @@ Acceptance:
 
 **US-6.2: Verify data is on pod**
 
-```
+```txt
 As Maria
 I want to confirm my data is on my Solid pod
 So that I trust I own my data
@@ -445,7 +445,7 @@ Acceptance:
 
 **US-6.3: Export data**
 
-```
+```txt
 As Maria
 I want to export all my data
 So that I have backup and can use elsewhere
@@ -464,7 +464,7 @@ Acceptance:
 
 **EC-1: Pod provider unreachable**
 
-```
+```txt
 When Maria's pod provider is down
 The app should show clear error message
 And allow viewing of locally cached content
@@ -473,7 +473,7 @@ And queue changes for sync when available
 
 **EC-2: Photo upload fails**
 
-```
+```txt
 When Alex's photo upload fails mid-upload
 The app should show error message
 And retain issue text already entered
@@ -482,7 +482,7 @@ And allow retry of photo upload
 
 **EC-3: Invalid location entry**
 
-```
+```txt
 When user enters invalid address
 The app should show "location not found"
 And suggest using map picker
@@ -491,7 +491,7 @@ And allow save without location
 
 **EC-4: Session expires**
 
-```
+```txt
 When session expires during use
 The app should prompt for re-login
 And not lose unsaved work
@@ -500,7 +500,7 @@ And return to previous context after login
 
 **EC-5: Quota exceeded on pod**
 
-```
+```txt
 When user's pod storage is full
 The app should show clear message
 And suggest what to do (upgrade pod, delete content)
@@ -509,7 +509,7 @@ And not corrupt existing data
 
 **EC-6: Conflicting edits**
 
-```
+```txt
 When user edits on two devices simultaneously
 The app should detect conflict
 And show both versions
@@ -524,7 +524,7 @@ These are not in MVP but documented for planning:
 
 **US-P2.1: Discover issues near me**
 
-```
+```txt
 As Jan
 I want to see issues documented by others in my area
 So that I know what problems people notice nearby
@@ -532,7 +532,7 @@ So that I know what problems people notice nearby
 
 **US-P2.2: Find people with similar interests**
 
-```
+```txt
 As Jan
 I want to find others who care about cycling in my city
 So that I'm not organizing alone
@@ -540,7 +540,7 @@ So that I'm not organizing alone
 
 **US-P2.3: Make my profile discoverable**
 
-```
+```txt
 As Maria
 I want my public profile to appear in searches
 So that potential collaborators can find me
@@ -552,7 +552,7 @@ So that potential collaborators can find me
 
 **US-P3.1: Propose action for issue**
 
-```
+```txt
 As Tomas
 I want to propose a specific action for an issue
 So that we can move from documentation to doing
@@ -560,7 +560,7 @@ So that we can move from documentation to doing
 
 **US-P3.2: Commit to action**
 
-```
+```txt
 As Jan
 I want to commit to attending a proposed action
 So that organizers know I'll be there
@@ -568,7 +568,7 @@ So that organizers know I'll be there
 
 **US-P3.3: Verify attendance**
 
-```
+```txt
 As Tomas
 I want to confirm who attended after the action
 So that we have accurate records

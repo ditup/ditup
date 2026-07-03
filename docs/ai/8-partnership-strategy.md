@@ -262,7 +262,7 @@ Partnerships address ditup's core weakness: lack of network density at launch. I
 
 **Template:**
 
-```
+```txt
 Subject: [Specific reference to their work] + civic organizing tool
 
 Hi [Name],

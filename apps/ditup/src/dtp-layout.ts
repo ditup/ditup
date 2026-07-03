@@ -1,14 +1,14 @@
-import { logout } from "@inrupt/solid-client-authn-browser";
-import { css, html, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import encodeURIComponent from "strict-uri-encode";
-import { store } from "./data/index.js";
-import "./dtp-avatar.js";
-import "./dtp-logo.js";
+import { logout } from '@inrupt/solid-client-authn-browser'
+import { css, html, LitElement } from 'lit'
+import { customElement, property } from 'lit/decorators.js'
+import encodeURIComponent from 'strict-uri-encode'
+import { store } from './data/index.js'
+import './dtp-avatar.js'
+import './dtp-logo.js'
 
-@customElement("dtp-layout")
+@customElement('dtp-layout')
 export class DitupLayout extends LitElement {
-  @property() webid = "";
+  @property() webid = ''
 
   render() {
     return html`<header class="header">
@@ -20,11 +20,11 @@ export class DitupLayout extends LitElement {
       </header>
       <main>
         <slot></slot>
-      </main>`;
+      </main>`
   }
 
   private _signout() {
-    logout();
+    logout()
   }
 
   static styles = css`
@@ -48,5 +48,5 @@ export class DitupLayout extends LitElement {
     .header > :first-child {
       margin-right: auto;
     }
-  `;
+  `
 }

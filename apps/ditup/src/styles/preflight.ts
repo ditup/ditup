@@ -1,4 +1,4 @@
-import { css } from "lit";
+import { css } from 'lit'
 
 export const reset = css`
   /*
@@ -64,10 +64,10 @@ SOFTWARE.
       ui-sans-serif,
       system-ui,
       sans-serif,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      "Noto Color Emoji"
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      'Noto Color Emoji'
     ); /* 4 */
     font-feature-settings: --theme(
       --default-font-feature-settings,
@@ -152,8 +152,8 @@ SOFTWARE.
       Menlo,
       Monaco,
       Consolas,
-      "Liberation Mono",
-      "Courier New",
+      'Liberation Mono',
+      'Courier New',
       monospace
     ); /* 1 */
     font-feature-settings: --theme(
@@ -411,7 +411,7 @@ SOFTWARE.
 */
 
   button,
-  input:where([type="button"], [type="reset"], [type="submit"]),
+  input:where([type='button'], [type='reset'], [type='submit']),
   ::file-selector-button {
     appearance: button;
   }
@@ -429,7 +429,7 @@ SOFTWARE.
   Make elements with the HTML hidden attribute stay hidden by default.
 */
 
-  [hidden]:where(:not([hidden="until-found"])) {
+  [hidden]:where(:not([hidden='until-found'])) {
     display: none !important;
   }
-`;
+`

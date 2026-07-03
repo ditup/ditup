@@ -269,7 +269,7 @@ The following are not permitted on ditup under any circumstances:
 
 ## Questions
 
-If guidelines are unclear, ask before posting. Contact: [support channel]
+If guidelines are unclear, ask before posting. Contact: \[support channel]
 
 ---
 

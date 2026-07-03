@@ -1,0 +1,19 @@
+name: Code quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+      - run: npm ci
+      - name: formatting check
+        run: npx prettier . --check
+      - name: linter check
+        run: npm run lint

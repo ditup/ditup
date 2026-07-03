@@ -1,13 +1,13 @@
-import "@awesome.me/webawesome/dist/components/dialog/dialog.js";
-import type WaDialog from "@awesome.me/webawesome/dist/components/dialog/dialog.js";
-import "@awesome.me/webawesome/dist/styles/themes/default.css";
-import { css, html, LitElement } from "lit";
-import { customElement, query } from "lit/decorators.js";
-import "./dtp-logo.js";
-import "./dtp-signin.js";
-import { reset } from "./styles/preflight";
+import '@awesome.me/webawesome/dist/components/dialog/dialog.js'
+import type WaDialog from '@awesome.me/webawesome/dist/components/dialog/dialog.js'
+import '@awesome.me/webawesome/dist/styles/themes/default.css'
+import { css, html, LitElement } from 'lit'
+import { customElement, query } from 'lit/decorators.js'
+import './dtp-logo.js'
+import './dtp-signin.js'
+import { reset } from './styles/preflight'
 
-@customElement("dtp-landing")
+@customElement('dtp-landing')
 export class DitupLanding extends LitElement {
   render() {
     return html`
@@ -21,14 +21,14 @@ export class DitupLanding extends LitElement {
       <wa-dialog label="Sign in" id="signin-dialog">
         <dtp-signin></dtp-signin>
       </wa-dialog>
-    `;
+    `
   }
 
-  @query("#signin-dialog")
-  _signinDialog?: WaDialog;
+  @query('#signin-dialog')
+  _signinDialog?: WaDialog
 
   private _startSignin() {
-    if (this._signinDialog) this._signinDialog.open = true;
+    if (this._signinDialog) this._signinDialog.open = true
   }
 
   static styles = [
@@ -84,5 +84,5 @@ export class DitupLanding extends LitElement {
         background-color: var(--color-primary);
       }
     `,
-  ];
+  ]
 }

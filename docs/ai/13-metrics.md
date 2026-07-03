@@ -51,11 +51,12 @@
 | Connection rate         | Discovery → any contact/follow       | >5%    | Discovery leads to connection |
 
 **Density metrics:**
-| Metric | Definition | Target |
-|--------|------------|--------|
-| Users per city | Active users in each seeded city | >20 |
-| Issues per area | Public issues within target areas | >50 |
-| Topic coverage | Active users per major topic | >10 |
+
+| Metric          | Definition                        | Target |
+| --------------- | --------------------------------- | ------ |
+| Users per city  | Active users in each seeded city  | >20    |
+| Issues per area | Public issues within target areas | >50    |
+| Topic coverage  | Active users per major topic      | >10    |
 
 ---
 
@@ -72,11 +73,12 @@
 | Action completion rate   | Actions marked completed          | >60%    | Follow-through              |
 
 **Outcome metrics:**
-| Metric | Definition | Target |
-|--------|------------|--------|
-| Issues resolved | Issues marked resolved with outcome | Growing |
-| Before/after documentation | Actions with outcome photos | >30% |
-| Repeat participation | Users in 2+ completed actions | >30% |
+
+| Metric                     | Definition                          | Target  |
+| -------------------------- | ----------------------------------- | ------- |
+| Issues resolved            | Issues marked resolved with outcome | Growing |
+| Before/after documentation | Actions with outcome photos         | >30%    |
+| Repeat participation       | Users in 2+ completed actions       | >30%    |
 
 ---
 
@@ -132,7 +134,7 @@
 
 ### User States
 
-```
+```txt
 Signup → Activated → Retained → Engaged → Contributing
 ```
 
@@ -155,19 +157,19 @@ Key funnels to track:
 
 **Onboarding funnel:**
 
-```
+```txt
 Landing page → Signup started → Pod setup → Profile created → First issue
 ```
 
 **Discovery funnel (Phase 2+):**
 
-```
+```txt
 Search → Results → Profile view → Contact/connection
 ```
 
 **Action funnel (Phase 3+):**
 
-```
+```txt
 Action viewed → Committed → Reminded → Attended → Verified
 ```
 

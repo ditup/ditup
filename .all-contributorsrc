@@ -3,9 +3,7 @@
   "projectOwner": "ditup",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 100,
   "commit": false,
   "commitConvention": "none",
@@ -15,21 +13,14 @@
       "name": "mrkvon",
       "avatar_url": "https://avatars.githubusercontent.com/u/7449720?v=4",
       "profile": "https://mrkvon.org/",
-      "contributions": [
-        "ideas",
-        "code",
-        "doc"
-      ]
+      "contributions": ["ideas", "code", "doc"]
     },
     {
       "login": "talitadzikzlasu",
       "name": "Talita",
       "avatar_url": "https://avatars.githubusercontent.com/u/63733780?v=4",
       "profile": "https://github.com/talitadzikzlasu",
-      "contributions": [
-        "design",
-        "ideas"
-      ]
+      "contributions": ["design", "ideas"]
     }
   ],
   "contributorsPerLine": 7,
