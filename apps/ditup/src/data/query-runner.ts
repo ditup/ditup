@@ -4,6 +4,7 @@ import {
   parseRdf,
   type LdhopQuery,
   type Variable,
+  type MixedVariables,
 } from "@ldhop/core";
 import type { Term } from "n3";
 import type { ResourceStore, ResourceStoreUnsubscribe } from "./resource-store";
@@ -27,14 +28,14 @@ export class QueryRunner<V extends Variable> {
   constructor(
     getStore: () => ResourceStore,
     query: LdhopQuery<V>,
-    callbacks: QueryRunnerCallbacks<V> = {}
+    callbacks: QueryRunnerCallbacks<V> = {},
   ) {
     this.getStore = getStore;
     this.query = query;
     this.callbacks = callbacks;
   }
 
-  run(variables: Partial<Record<V, Set<string>>>) {
+  run(variables: Partial<MixedVariables<V>>) {
     this.destroy();
 
     this._engine = new LdhopEngine(this.query, variables, undefined, {
@@ -76,7 +77,7 @@ export class QueryRunner<V extends Variable> {
           });
           this._engine?.addGraph(result.finalUrl, quads, uri);
         }
-      }
+      },
     );
 
     this.subscriptions.set(uri, unsubscribe);
