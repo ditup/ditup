@@ -45,5 +45,8 @@
     "typescript": "~6.0.2",
     "unplugin-dts": "^1.0.3",
     "vite": "^8.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
