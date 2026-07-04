@@ -5,11 +5,13 @@ import { customElement, property, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import type { Term } from 'n3'
 import { foaf, rdfs, space, vcard } from 'rdf-namespaces'
-import { findLiteral, findNamedNode, QueryRunner } from './data/query-runner'
-import type {
-  ResourceStore,
-  ResourceStoreUnsubscribe,
-} from './data/resource-store'
+import {
+  findLiteral,
+  findNamedNode,
+  QueryRunner,
+  type ResourceStore,
+  type ResourceStoreUnsubscribe,
+} from '@ditup/web-components/engine'
 
 const query: LdhopQuery<
   '?webid' | '?profileDocument' | '?preferencesFile' | '?photo' | '?name'

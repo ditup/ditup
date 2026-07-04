@@ -17,6 +17,8 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+      - name: Build @ditup/web-components
+        run: npm -w @ditup/web-components run build
       - name: Run Playwright tests
         run: npm run e2e -w apps/ditup/
       - uses: actions/upload-artifact@v4

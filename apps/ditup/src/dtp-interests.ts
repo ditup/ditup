@@ -1,58 +1,22 @@
-import '@awesome.me/webawesome/dist/components/avatar/avatar.js'
-import '@awesome.me/webawesome/dist/components/popover/popover.js'
-import { type LdhopQuery, type Variable } from '@ldhop/core'
-import { css, html, LitElement, nothing, type PropertyValues } from 'lit'
+import { ldhop, type Variable } from '@ldhop/core'
+import { css, html, LitElement, type PropertyValues } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
-import { ifDefined } from 'lit/directives/if-defined.js'
 import type { Term } from 'n3'
 import { foaf, rdfs, space } from 'rdf-namespaces'
-import { unauthStore } from './data'
-import { QueryRunner } from './data/query-runner'
-import type {
-  ResourceStore,
-  ResourceStoreUnsubscribe,
-} from './data/resource-store'
-import {
-  type Interest,
-  isInterest,
-  processWikidataEntity,
-  type WikidataEntitiesResult,
-  wikidataRegex,
-} from './data/wikidata'
+import { unauthStore } from './data/index.js'
+import { QueryRunner, type ResourceStore } from '@ditup/web-components/engine'
+import '@ditup/web-components/topic'
 
-const query: LdhopQuery<
-  '?webid' | '?profileDocument' | '?preferencesFile' | '?interest'
-> = [
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: rdfs.seeAlso,
-    pick: 'object',
-    target: '?profileDocument',
-  },
-  {
-    type: 'add resources',
-    variable: '?profileDocument',
-  },
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: space.preferencesFile,
-    pick: 'object',
-    target: '?preferencesFile',
-  },
-  {
-    type: 'add resources',
-    variable: '?preferencesFile',
-  },
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: foaf.topic_interest,
-    pick: 'object',
-    target: '?interest',
-  },
-]
+const query = ldhop('?webid')
+  .match('?webid', rdfs.seeAlso)
+  .o('?profileDocument')
+  .add()
+  .match('?webid', space.preferencesFile)
+  .o('?preferencesFile')
+  .add()
+  .match('?webid', foaf.topic_interest)
+  .o('?interest')
+  .toArray()
 
 @customElement('dtp-interests')
 export class DitupInterests extends LitElement {
@@ -103,85 +67,4 @@ export class DitupInterests extends LitElement {
       gap: 0.25rem 1rem;
     }
   `
-}
-
-@customElement('dtp-topic')
-export class DitupTopic extends LitElement {
-  @property() uri!: string
-  @property() language = 'en'
-  @state() protected _data: Interest = { uri: this.uri, aliases: [] }
-  @state() store?: ResourceStore
-
-  private _unsubscribes = new Map<string, ResourceStoreUnsubscribe>()
-
-  protected async updated(changedProperties: PropertyValues) {
-    if (
-      changedProperties.has('uri') ||
-      changedProperties.has('store') ||
-      changedProperties.has('language')
-    ) {
-      if (!this.store) return
-      this._data = { uri: this.uri, aliases: [] }
-      const id = this.uri.match(wikidataRegex)?.[2] ?? ''
-      // currently, we resolve only wikidata interests
-      if (!id) return
-
-      const wdapiuri = `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${id}&languages=${this.language}&format=json&origin=*`
-      const unsubscribe = this.store?.subscribe(wdapiuri, {}, (result) => {
-        if (!result.loading && !result.error) {
-          const outcome = processWikidataEntity({
-            id,
-            uri: this.uri,
-            data: result.data as WikidataEntitiesResult,
-            language: this.language,
-          })
-          if (isInterest(outcome)) this._data = outcome
-        }
-      })
-      this._unsubscribes.get(wdapiuri)?.()
-      this._unsubscribes.set(wdapiuri, unsubscribe)
-    }
-  }
-
-  disconnectedCallback(): void {
-    super.disconnectedCallback()
-    const unsubscribes = this._unsubscribes.values()
-    for (const u of unsubscribes) u()
-  }
-
-  render() {
-    return html`
-      <button id="interest">
-        ${this._data.label ?? this.uri.split('/').pop()}
-      </button>
-      <wa-popover for="interest">
-        <div>
-          <img src=${ifDefined(this._data.image)} alt="" />
-          <header>
-            <h3>
-              ${this._data.label}
-              <a href=${ifDefined(this._data?.uri)}>link</a>
-            </h3>
-            ${
-              this._data.aliases.length > 0
-                ? html`<div>${this._data.aliases.join(', ')}</div>`
-                : nothing
-            }
-            ${
-              this._data.officialWebsite
-                ? html`<a
-                    href=${ifDefined(this._data.officialWebsite)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    ${this._data.officialWebsite}
-                  </a>`
-                : nothing
-            }
-          </header>
-          <section>${this._data.description}</section>
-        </div>
-      </wa-popover>
-    `
-  }
 }

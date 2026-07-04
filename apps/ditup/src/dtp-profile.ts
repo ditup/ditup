@@ -6,7 +6,7 @@ import { ifDefined } from 'lit/directives/if-defined.js'
 import { store } from './data/index.js'
 import './dtp-avatar.js'
 import './dtp-interests.js'
-import './dtp-name.js'
+import '@ditup/web-components/name'
 
 @customElement('dtp-profile')
 export class DitupProfile extends LitElement {

@@ -7,7 +7,10 @@ import {
   type MixedVariables,
 } from '@ldhop/core'
 import type { Term } from 'n3'
-import type { ResourceStore, ResourceStoreUnsubscribe } from './resource-store'
+import type {
+  ResourceStore,
+  ResourceStoreUnsubscribe,
+} from './resource-store.js'
 
 interface QueryRunnerCallbacks<V extends Variable> {
   onVariableAdded?: (variable: V, value: Term, all: Set<Term>) => void

@@ -1,5 +1,5 @@
 {
-  "name": "ditup-client",
+  "name": "@ditup/app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@awesome.me/webawesome": "^3.10.0",
+    "@ditup/web-components": "^0.0.1",
     "@inrupt/solid-client-authn-browser": "^5.0.0",
     "@ldhop/core": "^1.0.0-alpha.8",
     "@lit-labs/router": "^0.1.4",

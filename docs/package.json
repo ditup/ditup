@@ -1,5 +1,5 @@
 {
-  "name": "ditup-docs",
+  "name": "@ditup/docs",
   "version": "0.0.1",
   "private": true,
   "type": "module",

@@ -1,58 +1,36 @@
-import '@awesome.me/webawesome/dist/components/avatar/avatar.js'
-import { type LdhopQuery } from '@ldhop/core'
+import { ldhop } from '@ldhop/core'
 import { html, LitElement, type PropertyValues } from 'lit'
 import { customElement, property, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import { foaf, rdfs, space, vcard } from 'rdf-namespaces'
-import { findLiteral, QueryRunner } from './data/query-runner.js'
-import type { ResourceStore } from './data/resource-store.js'
+import { findLiteral, QueryRunner } from '../engine/query-runner.js'
+import type { ResourceStore } from '../engine/resource-store.js'
+import nameShape from './name.shacl.ttl?raw'
 
-const query: LdhopQuery<
-  '?webid' | '?profileDocument' | '?preferencesFile' | '?name'
-> = [
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: rdfs.seeAlso,
-    pick: 'object',
-    target: '?profileDocument',
-  },
-  {
-    type: 'add resources',
-    variable: '?profileDocument',
-  },
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: space.preferencesFile,
-    pick: 'object',
-    target: '?preferencesFile',
-  },
-  {
-    type: 'add resources',
-    variable: '?preferencesFile',
-  },
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: vcard.fn,
-    pick: 'object',
-    target: '?name',
-  },
-  {
-    type: 'match',
-    subject: '?webid',
-    predicate: foaf.name,
-    pick: 'object',
-    target: '?name',
-  },
-]
+const query = ldhop('?webid')
+  .match('?webid', rdfs.seeAlso)
+  .o('?profileDocument')
+  .add()
+  .match('?webid', space.preferencesFile)
+  .o('?preferencesFile')
+  .add()
+  .match('?webid', vcard.fn)
+  .o('?name')
+  .match('?webid', foaf.name)
+  .o('?name')
+  .toArray()
 
 @customElement('dtp-name')
 export class DitupName extends LitElement {
   @property() webid?: string
   @state() protected _name?: string
   @property({ attribute: false }) store!: ResourceStore
+
+  _shape = nameShape
+
+  get shape() {
+    return this._shape
+  }
 
   private runner = new QueryRunner(() => this.store, query, {
     onVariableAdded: (variable, _, all) => this.handleVariable(variable, all),
@@ -85,3 +63,6 @@ export class DitupName extends LitElement {
     return html`${ifDefined(this._name)}`
   }
 }
+
+// The name shape is not used in any way for the component contract, yet.
+export { nameShape }

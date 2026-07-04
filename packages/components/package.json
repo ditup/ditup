@@ -1,0 +1,48 @@
+{
+  "name": "@ditup/web-components",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./topic": {
+      "import": "./dist/topic/index.js",
+      "require": "./dist/topic/index.cjs",
+      "types": "./dist/topic/index.d.ts"
+    },
+    "./name": {
+      "import": "./dist/name/index.js",
+      "require": "./dist/name/index.cjs",
+      "types": "./dist/name/index.d.ts"
+    },
+    "./engine": {
+      "import": "./dist/engine/index.js",
+      "require": "./dist/engine/index.cjs",
+      "types": "./dist/engine/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@awesome.me/webawesome": "^3.10.0",
+    "@ldhop/core": "^1.0.0-alpha.8",
+    "@rdfjs/types": "^2.0.1",
+    "@types/n3": "^1.26.1",
+    "lit": "^3.3.3",
+    "n3": "^2.1.1",
+    "rdf-namespaces": "^1.17.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "unplugin-dts": "^1.0.3",
+    "vite": "^8.1.1"
+  }
+}

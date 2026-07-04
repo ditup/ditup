@@ -1,0 +1,14 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:PersonShape a sh:NodeShape ;
+    sh:property [
+        sh:path foaf:name ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path vcard:fn ;
+        sh:datatype xsd:string ;
+    ] .
