@@ -17,9 +17,12 @@ import {
 @customElement('dtp-topic')
 export class DitupTopic extends LitElement {
   @property() uri!: string
-  @property() language = 'en'
+  @property() language?: string
   @state() protected _data: Interest = { uri: this.uri, aliases: [] }
   @state() store?: ResourceStore
+  @state() private _globalLang = document.documentElement.lang
+
+  private _observer?: MutationObserver
 
   private _unsubscribes = new Map<string, ResourceStoreUnsubscribe>()
 
@@ -27,7 +30,8 @@ export class DitupTopic extends LitElement {
     if (
       changedProperties.has('uri') ||
       changedProperties.has('store') ||
-      changedProperties.has('language')
+      changedProperties.has('language') ||
+      changedProperties.has('_globalLang')
     ) {
       if (!this.store) return
       this._data = { uri: this.uri, aliases: [] }
@@ -35,14 +39,16 @@ export class DitupTopic extends LitElement {
       // currently, we resolve only wikidata interests
       if (!id) return
 
-      const wdapiuri = `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${id}&languages=${this.language}&format=json&origin=*`
+      const language = this.language ?? this._globalLang ?? 'en'
+
+      const wdapiuri = `https://www.wikidata.org/w/api.php?action=wbgetentities&ids=${id}&languages=${language}&format=json&origin=*`
       const unsubscribe = this.store?.subscribe(wdapiuri, {}, (result) => {
         if (!result.loading && !result.error) {
           const outcome = processWikidataEntity({
             id,
             uri: this.uri,
             data: result.data as WikidataEntitiesResult,
-            language: this.language,
+            language,
           })
           if (isInterest(outcome)) this._data = outcome
         }
@@ -52,10 +58,28 @@ export class DitupTopic extends LitElement {
     }
   }
 
+  connectedCallback(): void {
+    super.connectedCallback()
+    this._observer = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        if (m.type === 'attributes' && m.attributeName === 'lang') {
+          this._globalLang = document.documentElement.lang
+        }
+      }
+    })
+    this._observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['lang'],
+    })
+  }
+
   disconnectedCallback(): void {
     super.disconnectedCallback()
+
     const unsubscribes = this._unsubscribes.values()
     for (const u of unsubscribes) u()
+
+    this._observer?.disconnect()
   }
 
   render() {

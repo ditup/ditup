@@ -7,24 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+#### App
+
+- Add i18n with @lit/localize.
+- Include localization for webawesome.
+
+#### Web components
+
+- Change wikidata language based on current app language.
+
+#### Docs
+
+- Start documentation for `@ditup/web-components`.
+
 ## [0.0.1] - 2026-07-04
 
-### App
+### Added
 
-#### Added
+#### App
 
 - Set up Lit + Vite app based on Solid protocol.
 - Add playwright tests for the app.
 
-### Web components
-
-#### Added
+#### Web components
 
 - Initialize reusable web components library.
 
-### Docs
-
-#### Added
+#### Docs
 
 - Add documentation with Vitepress.
 

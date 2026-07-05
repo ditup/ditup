@@ -34,10 +34,19 @@ export default defineConfig({
           { text: 'Architecture', link: '/architecture' },
         ],
       },
+      {
+        text: 'Web Components',
+        link: '/web-components',
+        items: [
+          { text: 'topic', link: '/web-components/topic' },
+          { text: 'name', link: '/web-components/name' },
+        ],
+      },
     ],
 
     socialLinks: [
       { icon: 'matrix', link: 'https://matrix.to/#/#ditup:matrix.org' },
+      { icon: 'npm', link: 'https://npmjs.com/org/ditup' },
       { icon: 'github', link: 'https://github.com/ditup/ditup' },
     ],
 

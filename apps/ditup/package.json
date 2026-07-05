@@ -16,6 +16,7 @@
     "@inrupt/solid-client-authn-browser": "^5.0.0",
     "@ldhop/core": "^1.0.0-alpha.8",
     "@lit-labs/router": "^0.1.4",
+    "@lit/localize": "^0.12.2",
     "@types/n3": "^1.26.1",
     "@types/strict-uri-encode": "^2.0.2",
     "lit": "^3.3.3",
@@ -24,10 +25,13 @@
     "strict-uri-encode": "^2.0.0"
   },
   "devDependencies": {
+    "@lit/localize-tools": "^0.8.2",
     "@playwright/test": "^1.61.1",
     "@solid/community-server": "^7.1.9",
+    "@types/lodash": "^4.17.24",
     "@types/node": "^26.1.0",
     "css-authn": "^0.4.0",
+    "lodash": "^4.18.1",
     "typescript": "^6.0.3",
     "vite": "^8.1.3"
   }

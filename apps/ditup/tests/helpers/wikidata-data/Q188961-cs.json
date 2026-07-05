@@ -1,0 +1,1577 @@
+{
+  "entities": {
+    "Q188961": {
+      "pageid": 187552,
+      "ns": 0,
+      "title": "Q188961",
+      "lastrevid": 2510624437,
+      "modified": "2026-06-26T04:52:10Z",
+      "type": "item",
+      "id": "Q188961",
+      "labels": { "cs": { "language": "cs", "value": "decentralizace" } },
+      "descriptions": {},
+      "aliases": {},
+      "claims": {
+        "P910": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P910",
+              "hash": "7f8c996f775b472f381f64ea9da81f69164a3372",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6992313,
+                  "id": "Q6992313"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$E89D9B9E-C676-4144-AE99-387FB82C2FB0",
+            "rank": "normal"
+          }
+        ],
+        "P349": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P349",
+              "hash": "bdc6c2f10403f089a4f899acb522d65842350ab6",
+              "datavalue": { "value": "01182011", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$A72B57E5-1236-4343-9FDB-50DF9CD8656E",
+            "rank": "normal"
+          }
+        ],
+        "P461": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P461",
+              "hash": "cf592fb72833139e0f16b94c9e425a7a3601c5c0",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 190632,
+                  "id": "Q190632"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$5a364131-4184-7377-3c96-f27cb3c7df09",
+            "rank": "normal"
+          }
+        ],
+        "P1014": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1014",
+              "hash": "0c95fbcc21558e91a0a175b417d7b974e2b81d9a",
+              "datavalue": { "value": "300055495", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$2FFDA692-2DE3-45F7-810A-B2F767C46660",
+            "rank": "normal"
+          }
+        ],
+        "P1296": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1296",
+              "hash": "bec227cf4566f4075382b2802bc5fd33acd023c0",
+              "datavalue": { "value": "0228481", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$70EE2ED9-719C-4993-B4DE-579AA7A0E142",
+            "rank": "normal"
+          }
+        ],
+        "P3417": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3417",
+              "hash": "488d8db61cffe79a61bc1d255bdc4c289ac4d031",
+              "datavalue": {
+                "value": "Decentralized-Networks",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$012DB9A0-7B66-4972-BCD8-19DC0AEA156C",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "3b0a5bb3c1f955edce73740124f7d935698092ad",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "3ac9682e789a3a3791d4fd088b265ea03abef101",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 51711,
+                          "id": "Q51711"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": ["P248"]
+              }
+            ]
+          }
+        ],
+        "P3569": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3569",
+              "hash": "b87ec7268233ebfea7231cfa9da1fb197164c347",
+              "datavalue": {
+                "value": "nederlandse-politiek/decentralisatie",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$7EB89899-0495-4E6D-ADC7-61E6A31D52F2",
+            "rank": "normal"
+          }
+        ],
+        "P3916": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3916",
+              "hash": "2a948deab77a152dd3b56692f27df7ceddf84102",
+              "datavalue": { "value": "concept4877", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$102E8454-5058-4D37-BC90-F31268E0A168",
+            "rank": "normal"
+          }
+        ],
+        "P227": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P227",
+              "hash": "5dd1f577a61a4a7f3c5ee75c588f630681909828",
+              "datavalue": { "value": "4012005-3", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$8B83C44C-AC4A-4F72-863A-5F16AE4C5B59",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a24f7c0208b05d6be97077d855671d1dfdbc0dd",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "d38375ffe6fe142663ff55cd783aa4df4301d83d",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 48183,
+                          "id": "Q48183"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": ["P143"]
+              }
+            ]
+          }
+        ],
+        "P3219": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3219",
+              "hash": "8eb13ea0775e8d2e8d5d97bfc0f330fed63a0f96",
+              "datavalue": { "value": "decentralisation", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$9F7838F2-1D1A-45FF-9031-7228A3847BD5",
+            "rank": "normal"
+          }
+        ],
+        "P5198": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5198",
+              "hash": "4ecb3ac804cc4699c6d465041e2a0221e8d3f44c",
+              "datavalue": { "value": "294907238", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$E3E17A7A-761E-41AD-BE13-7D186C8F65D3",
+            "rank": "normal"
+          }
+        ],
+        "P279": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P279",
+              "hash": "c1c6e2ada33177e90a6d2b79e9bdcdeef4f8974b",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 3249551,
+                  "id": "Q3249551"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$92cf1303-4c16-5a1b-eb23-f4211672102a",
+            "rank": "normal"
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "2668c24357dd4b738245e72d99fda3f307e96974",
+              "datavalue": { "value": "Decentralization", "type": "string" },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q188961$0e0affa1-48b8-84fa-19da-4f95c2b1b534",
+            "rank": "normal"
+          }
+        ],
+        "P6363": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6363",
+              "hash": "0ff14d2ab06952b08b1b189d4689e6e5d99e7a99",
+              "datavalue": {
+                "value": "http://data.thenextweb.com/tnw/entity/decentralization",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "id": "Q188961$9002914b-46f5-9c6d-5224-63584c90250f",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "f593be2b300c10429e4119085f34ffd1d0186040",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "48ebbe1fc3cfea15ef38de24e51d903e6f7dd182",
+                      "datavalue": {
+                        "value": "https://thenextweb.com/vocabulary/decentralization/",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": ["P854"]
+              }
+            ]
+          }
+        ],
+        "P6366": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6366",
+              "hash": "e776c60031faf43d38184859ec005d3ec18c5b43",
+              "datavalue": { "value": "136810230", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$B3D718DB-CF65-47EF-83F9-1C32729C77D8",
+            "rank": "normal"
+          }
+        ],
+        "P5437": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5437",
+              "hash": "7e5b767babd858dd20263131eb86489b2d2936f8",
+              "datavalue": { "value": "340", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$64F836B5-7615-4B5A-822C-AA1DD91D79FF",
+            "rank": "normal"
+          }
+        ],
+        "P1889": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1889",
+              "hash": "7c49bb8ee0a1ebd158172718d9c347721f02facf",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2020695,
+                  "id": "Q2020695"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$B5EB8E05-33E9-4BDA-A8EC-7DDF5F6C5BB9",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "e23b9471d9f883fe37bf6dd835ab27ee132d0d9d",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "f30cbd35620c4ea6d0633aaf0210a8916130469b",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8447,
+                          "id": "Q8447"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "2ad507f3edd2d169026bbb9be90dfa3176ad746c",
+                      "datavalue": {
+                        "value": "https://fr.wikipedia.org/w/index.php?title=D\u00e9centralisation&oldid=168472943",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": ["P143", "P4656"]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1889",
+              "hash": "da00c5d40423a15e3d2dfadafa4f4d4cd799c088",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 111674943,
+                  "id": "Q111674943"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$d672bd4c-447e-8479-1ec3-965d9a8fba11",
+            "rank": "normal"
+          }
+        ],
+        "P8408": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8408",
+              "hash": "7dff3ed7cd6c5bd1e0342e8f6a2674f7de12c6a9",
+              "datavalue": { "value": "Decentralization", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$8498C6FE-9A58-48F8-A63D-DB78C3231452",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "9a681f9dd95c90224547c404e11295f4f7dcf54e",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "9d5780dddffa8746637a9929a936ab6b0f601e24",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 64139102,
+                          "id": "Q64139102"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "622a5a27fa5b25e7e7984974e9db494cf8460990",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2020-07-09T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": ["P248", "P813"]
+              }
+            ]
+          }
+        ],
+        "P7502": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P7502",
+              "hash": "4ce64b4560d0437fbb3836ffae5c2357cee6dcb8",
+              "datavalue": {
+                "value": "Decentralization-EK65N",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$4E0AC779-6251-4DF6-807D-7F764D6FD2AC",
+            "rank": "normal"
+          }
+        ],
+        "P3222": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3222",
+              "hash": "f29916e4b11f0a19c0addd3820c21762142de72c",
+              "datavalue": { "value": "decentralisering", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$C31692A8-6C5B-41A8-97D0-9FF11D892F27",
+            "rank": "normal"
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "ad1b8f0035eedcb3447534b3bd85f558dc1bd918",
+              "datavalue": { "value": "/m/0d3bh", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$38E571CC-BC59-4DEE-9E4B-D0CF59890D97",
+            "rank": "normal"
+          }
+        ],
+        "P2347": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2347",
+              "hash": "6bd70bd4ea587ee45686619d9434aac75afb21f3",
+              "datavalue": { "value": "6739", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P4900": [
+                {
+                  "snaktype": "value",
+                  "property": "P4900",
+                  "hash": "63a65ba4ee55c4f8ae23a472c4266eaab62c7ea8",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 134701057,
+                      "id": "Q134701057"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P14457": [
+                {
+                  "snaktype": "value",
+                  "property": "P14457",
+                  "hash": "3968d6b7f18e9e6f7ea4c3e3836244be154c3f38",
+                  "datavalue": {
+                    "value": { "text": "decentralisering", "language": "sv" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14457",
+                  "hash": "8e28cad8ffcfa25d3ea094be2b81f2f2375c0a10",
+                  "datavalue": {
+                    "value": { "text": "l\u00e1vdadeapmi", "language": "se" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14457",
+                  "hash": "4485ace410ca880c0d1b1457893318a5f489c1bf",
+                  "datavalue": {
+                    "value": { "text": "hajautus", "language": "fi" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14457",
+                  "hash": "4089577fe0faf046a30b7f32db60e801f3aa9614",
+                  "datavalue": {
+                    "value": { "text": "decentralisation", "language": "en" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                }
+              ],
+              "P14458": [
+                {
+                  "snaktype": "value",
+                  "property": "P14458",
+                  "hash": "b3d6a0e030c9b2f44568c5a41751f3c0922e2956",
+                  "datavalue": {
+                    "value": { "text": "desentralisaatio", "language": "fi" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14458",
+                  "hash": "1a7c00708aeb9fdf10f8069656c291ffe96249ba",
+                  "datavalue": {
+                    "value": { "text": "hajauttaminen", "language": "fi" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14458",
+                  "hash": "cb9ba23921bb694aa389ebb1d377a14342491689",
+                  "datavalue": {
+                    "value": { "text": "decentralization", "language": "en" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14458",
+                  "hash": "39bc66236b0c0fba4ec4a9e14dfe361cbfaf5a8d",
+                  "datavalue": {
+                    "value": { "text": "utlokalisering", "language": "sv" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P14458",
+                  "hash": "027a33599a909417decda35d13b9049717336f81",
+                  "datavalue": {
+                    "value": { "text": "hajasijoitus", "language": "fi" },
+                    "type": "monolingualtext"
+                  },
+                  "datatype": "monolingualtext"
+                }
+              ]
+            },
+            "qualifiers-order": ["P4900", "P14457", "P14458"],
+            "id": "Q188961$82F6F574-C70A-4A86-9144-A19386134069",
+            "rank": "normal"
+          }
+        ],
+        "P6385": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P6385",
+              "hash": "8529a1186f92015be81080939d5750fecefdb277",
+              "datavalue": {
+                "value": "gosudarstvo-i-politika/detsentralizatsiya",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$094303cf-4aa0-f026-58cc-98aea30ff128",
+            "rank": "normal"
+          }
+        ],
+        "P1343": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1343",
+              "hash": "42346dfe9209b7359c1f5db829a368b38d407797",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 19180675,
+                  "id": "Q19180675"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P805": [
+                {
+                  "snaktype": "value",
+                  "property": "P805",
+                  "hash": "f344913fcda63a4ae31520a6f93aac9ba565aee1",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 24745242,
+                      "id": "Q24745242"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": ["P805"],
+            "id": "Q188961$b3aae4a2-439b-ea8a-3f45-0cd24dffbc05",
+            "rank": "normal"
+          }
+        ],
+        "P9466": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9466",
+              "hash": "48752a671f71dd9adc077434b2387a5323825629",
+              "datavalue": { "value": "decentralisering", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$AC07921E-E9DE-48BA-A982-4E6702F52E45",
+            "rank": "normal"
+          }
+        ],
+        "P10283": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P10283",
+              "hash": "fd5ada93d276da307f35759ca93047e8104e54a1",
+              "datavalue": { "value": "C136810230", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$C33309B7-8340-45C7-B937-27A27B9B6142",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "e0b27d817c9a9b3247df341000fc490bafcba862",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "4a4f26a5361b5707266e48e425bf2be2f99fd2ab",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 107507571,
+                          "id": "Q107507571"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "435834d08182bb9f3dbe974ba9840af0f12899cc",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2022-01-26T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ],
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "a4a4bf53f22268815c51ec10fed608da703c9c7f",
+                      "datavalue": {
+                        "value": "https://docs.openalex.org/download-snapshot/snapshot-data-format",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P1065": [
+                    {
+                      "snaktype": "value",
+                      "property": "P1065",
+                      "hash": "3134281f51e2490f88272d53c56ee95d9cc24e2c",
+                      "datavalue": {
+                        "value": "https://web.archive.org/web/20220125070108/https://docs.openalex.org/download-snapshot/snapshot-data-format",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ],
+                  "P2960": [
+                    {
+                      "snaktype": "value",
+                      "property": "P2960",
+                      "hash": "f7ff3a0de7f9571ecb5e0740cba4122c6703e1ec",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2022-01-25T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": ["P248", "P813", "P854", "P1065", "P2960"]
+              }
+            ]
+          }
+        ],
+        "P8313": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8313",
+              "hash": "062f66d1255787cf77c8a06d3998a17b379b1e29",
+              "datavalue": { "value": "decentralisering", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$092B5DA9-5CC4-4262-A080-0CB84F2C3DE1",
+            "rank": "normal"
+          }
+        ],
+        "P10717": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P10717",
+              "hash": "4edcda43638e26cc25dc595bb39cf645d5d0dc12",
+              "datavalue": { "value": "decentralization", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$65366EFC-540E-400C-9065-32F19713D5C0",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "ee7efa073b6801cd0f3ee3d20a8b4985e37151df",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "07596fc82d3ed4d248b85e5543852cc31e37dc8c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 199913,
+                          "id": "Q199913"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P4656": [
+                    {
+                      "snaktype": "value",
+                      "property": "P4656",
+                      "hash": "ab66c3ac0bd01ebd40d8ff60240bfde2693be229",
+                      "datavalue": {
+                        "value": "https://he.wikipedia.org/w/index.php?title=\u05d1\u05d9\u05d6\u05d5\u05e8&oldid=32713471",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": ["P143", "P4656"]
+              }
+            ]
+          }
+        ],
+        "P691": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P691",
+              "hash": "19447ad38d927fbe790f738c6073acefded221de",
+              "datavalue": { "value": "ph119352", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "0cf79e81b67403a5dea15d8a60360879b2a2b5cd",
+                  "datavalue": { "value": "decentralizace", "type": "string" },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": ["P1810"],
+            "id": "Q188961$DBE2F81D-C5DD-4374-B913-8CF784CAC143",
+            "rank": "normal"
+          }
+        ],
+        "P5008": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P5008",
+              "hash": "136e3fbe19158e73e4bfebf3f2d98a9df8638b7e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6173448,
+                  "id": "Q6173448"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "7661f66dd5b82a1ea92515ddb16c09ce3088edea",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2022-10-31T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": ["P585"],
+            "id": "Q188961$36ED006B-C779-44F8-85B3-B1F5A4FD0E75",
+            "rank": "normal"
+          }
+        ],
+        "P4342": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P4342",
+              "hash": "8a365c9ca12fe81768854d2cd9595746bfff0935",
+              "datavalue": { "value": "desentralisering", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$1593FC30-6F6B-4510-A74C-093B1A7BC8B2",
+            "rank": "normal"
+          }
+        ],
+        "P11093": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11093",
+              "hash": "c6f0336ed4fd3f1597fd0955358e1621ee92d6b6",
+              "datavalue": { "value": "adem_i_merkeziyet", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$829A3877-F4FB-48C0-BCBF-C99735202844",
+            "rank": "normal"
+          }
+        ],
+        "P2179": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P2179",
+              "hash": "9bcc22365600e24fe9b53e5186b3ca436ca49bb5",
+              "datavalue": { "value": "10003508", "type": "string" },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q188961$3BD6D098-B0B5-483F-BE1C-46852886FB51",
+            "rank": "normal"
+          }
+        ],
+        "P11514": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P11514",
+              "hash": "e56474fe6d7a752211162379b5c51ead2044ddc1",
+              "datavalue": {
+                "value": "detsentralizatsiia-fa5c4b",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$841CB5BF-B901-438A-9709-F9C68CD0B103",
+            "rank": "normal"
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "f6d7347e77a821127845b457eb275db82b3da875",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1047113,
+                  "id": "Q1047113"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$D9B7EF09-B09B-47F1-B1CE-3BDAF1A3ABEF",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "dcfd1f53c6b85c8f65ecad4c9931223583400a13",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 2267705,
+                  "id": "Q2267705"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$3D83B41B-063C-4580-890B-9B449334B1D5",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "81a4bd88233589d8da9b97de0f53a32e11d89887",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 12909644,
+                  "id": "Q12909644"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q188961$3eb0acdb-4e17-174f-4519-d356c3948748",
+            "rank": "normal"
+          }
+        ],
+        "P3911": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P3911",
+              "hash": "bb70f9cd102a6b8910bd86585403ea7c42c74fef",
+              "datavalue": { "value": "16297-6", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P4390": [
+                {
+                  "snaktype": "value",
+                  "property": "P4390",
+                  "hash": "1a4df62914ea9afca349bd5fb5d8efd5832d83fa",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 39893449,
+                      "id": "Q39893449"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": ["P4390"],
+            "id": "Q188961$4E072A69-4AB7-4839-87CD-B22D44FEDA14",
+            "rank": "normal"
+          }
+        ],
+        "P9868": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9868",
+              "hash": "bc3c62616811217e5770b6dfe8eaa7da1afa069c",
+              "datavalue": { "value": "797", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$DA9F917B-D817-4628-9259-83DDC0A470C9",
+            "rank": "normal"
+          }
+        ],
+        "P12385": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P12385",
+              "hash": "cd31cf95d44b3565fd4d26b352301432a977442c",
+              "datavalue": { "value": "descentralitzacio", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$ba0cf8a2-5419-4222-97df-70facf74a3e4",
+            "rank": "normal"
+          }
+        ],
+        "P12800": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P12800",
+              "hash": "aa76e8d85d0232913344fb882946996ec90e47a7",
+              "datavalue": {
+                "value": "fr:D\u00e9centralisation",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$801A49D1-A7FF-4A01-93C9-581F8C52F56F",
+            "rank": "normal"
+          }
+        ],
+        "P9497": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9497",
+              "hash": "9ccf8cd36f696ef62ac707a9f76e47f6b8471347",
+              "datavalue": { "value": "1041", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "5c6e035595917842d4e760abebca7843cde331f6",
+                  "datavalue": {
+                    "value": "decentralisation",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": ["P1810"],
+            "id": "Q188961$091944E3-66DA-41D8-A4C8-93DC1E6DBF87",
+            "rank": "normal"
+          }
+        ],
+        "P9346": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9346",
+              "hash": "48c8121f5686c9093a939264d8e5890901250271",
+              "datavalue": {
+                "value": "d\u00e9centralisation",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$9F9D1C1C-4062-4885-A353-CB463EFA7A98",
+            "rank": "normal"
+          }
+        ],
+        "P7314": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P7314",
+              "hash": "550ddc3da11ad484e9c7ee94cb0787bfd8d9c21d",
+              "datavalue": { "value": "adem-i-merkeziyet", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$608F4EE7-B047-4F67-8D4D-3F0D795CC3FF",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "b7f6831d3234b9d9a310dc4379afc6449fabe813",
+                "snaks": {
+                  "P854": [
+                    {
+                      "snaktype": "value",
+                      "property": "P854",
+                      "hash": "3bc1bf24fb03aa7c816fd0aec47e206a2f2c2d9c",
+                      "datavalue": {
+                        "value": "https://islamansiklopedisi.org.tr/adem-i-merkeziyet",
+                        "type": "string"
+                      },
+                      "datatype": "url"
+                    }
+                  ]
+                },
+                "snaks-order": ["P854"]
+              }
+            ]
+          }
+        ],
+        "P9322": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P9322",
+              "hash": "effe70f86e84bfb8bb4e855a44cd996bc33cfed2",
+              "datavalue": {
+                "value": "0295315-decentralizace",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$C25DB45E-D7A8-45FB-9D4F-CAA6C34EAFB3",
+            "rank": "normal"
+          }
+        ],
+        "P7666": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P7666",
+              "hash": "ce75d729dc13b5dba24a9bf43909c28697b25279",
+              "datavalue": { "value": "decentralizacija", "type": "string" },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q188961$2e505a08-415c-03a4-c8c8-dd8d8c38618a",
+            "rank": "normal"
+          }
+        ]
+      },
+      "sitelinks": {
+        "arwiki": {
+          "site": "arwiki",
+          "title": "\u0644\u0627\u0645\u0631\u0643\u0632\u064a\u0629 (\u0625\u062f\u0627\u0631\u0629)",
+          "badges": []
+        },
+        "astwiki": {
+          "site": "astwiki",
+          "title": "Descentralizaci\u00f3n",
+          "badges": []
+        },
+        "azwiki": {
+          "site": "azwiki",
+          "title": "Desentralizasiya",
+          "badges": []
+        },
+        "bgwiki": {
+          "site": "bgwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f",
+          "badges": []
+        },
+        "bnwiki": {
+          "site": "bnwiki",
+          "title": "\u09ac\u09bf\u0995\u09c7\u09a8\u09cd\u09a6\u09cd\u09b0\u09c0\u0995\u09b0\u09a3",
+          "badges": []
+        },
+        "bswiki": {
+          "site": "bswiki",
+          "title": "Decentralizacija",
+          "badges": []
+        },
+        "bxrwiki": {
+          "site": "bxrwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438",
+          "badges": []
+        },
+        "cawiki": {
+          "site": "cawiki",
+          "title": "Descentralitzaci\u00f3",
+          "badges": []
+        },
+        "ckbwiki": {
+          "site": "ckbwiki",
+          "title": "\u0644\u0627\u0645\u06d5\u0631\u06a9\u06d5\u0632\u06cc",
+          "badges": []
+        },
+        "cswiki": { "site": "cswiki", "title": "Decentralizace", "badges": [] },
+        "dawiki": {
+          "site": "dawiki",
+          "title": "Decentralisering",
+          "badges": []
+        },
+        "dewiki": {
+          "site": "dewiki",
+          "title": "Dezentralisierung (Politik)",
+          "badges": []
+        },
+        "elwiki": {
+          "site": "elwiki",
+          "title": "\u0394\u03b9\u03bf\u03b9\u03ba\u03b7\u03c4\u03b9\u03ba\u03ae \u03b1\u03c0\u03bf\u03ba\u03ad\u03bd\u03c4\u03c1\u03c9\u03c3\u03b7",
+          "badges": []
+        },
+        "enwiki": {
+          "site": "enwiki",
+          "title": "Decentralization",
+          "badges": []
+        },
+        "enwikiquote": {
+          "site": "enwikiquote",
+          "title": "Decentralization",
+          "badges": []
+        },
+        "eowikiquote": {
+          "site": "eowikiquote",
+          "title": "Malcentralizado",
+          "badges": []
+        },
+        "eswiki": {
+          "site": "eswiki",
+          "title": "Descentralizaci\u00f3n",
+          "badges": []
+        },
+        "euwiki": {
+          "site": "euwiki",
+          "title": "Deszentralizazio",
+          "badges": []
+        },
+        "fawiki": {
+          "site": "fawiki",
+          "title": "\u062a\u0645\u0631\u06a9\u0632\u0632\u062f\u0627\u06cc\u06cc",
+          "badges": []
+        },
+        "fiwiki": {
+          "site": "fiwiki",
+          "title": "Desentralisaatio",
+          "badges": []
+        },
+        "frwiki": {
+          "site": "frwiki",
+          "title": "D\u00e9centralisation",
+          "badges": []
+        },
+        "frwikinews": {
+          "site": "frwikinews",
+          "title": "Cat\u00e9gorie:D\u00e9centralisation",
+          "badges": []
+        },
+        "fywiki": {
+          "site": "fywiki",
+          "title": "Desintralisaasje",
+          "badges": []
+        },
+        "gawiki": {
+          "site": "gawiki",
+          "title": "D\u00edl\u00e1r\u00fa",
+          "badges": []
+        },
+        "glwiki": {
+          "site": "glwiki",
+          "title": "Descentralizaci\u00f3n",
+          "badges": []
+        },
+        "hewiki": {
+          "site": "hewiki",
+          "title": "\u05d1\u05d9\u05d6\u05d5\u05e8",
+          "badges": []
+        },
+        "hiwiki": {
+          "site": "hiwiki",
+          "title": "\u0935\u093f\u0915\u0947\u0902\u0926\u094d\u0930\u0940\u0915\u0930\u0923",
+          "badges": []
+        },
+        "hrwiki": {
+          "site": "hrwiki",
+          "title": "Decentralizacija",
+          "badges": []
+        },
+        "hywiki": {
+          "site": "hywiki",
+          "title": "\u0531\u057a\u0561\u056f\u0565\u0576\u057f\u0580\u0578\u0576\u0561\u0581\u0578\u0582\u0574",
+          "badges": []
+        },
+        "idwiki": { "site": "idwiki", "title": "Desentralisasi", "badges": [] },
+        "itwiki": { "site": "itwiki", "title": "Decentramento", "badges": [] },
+        "kawiki": {
+          "site": "kawiki",
+          "title": "\u10d3\u10d4\u10ea\u10d4\u10dc\u10e2\u10e0\u10d0\u10da\u10d8\u10d6\u10d0\u10ea\u10d8\u10d0",
+          "badges": []
+        },
+        "kkwiki": {
+          "site": "kkwiki",
+          "title": "\u041e\u0440\u0442\u0430\u043b\u044b\u049b\u0441\u044b\u0437\u0434\u0430\u043d\u0434\u044b\u0440\u0443",
+          "badges": []
+        },
+        "knwiki": {
+          "site": "knwiki",
+          "title": "\u0cb5\u0cbf\u0c95\u0cc7\u0c82\u0ca6\u0ccd\u0cb0\u0cc0\u0c95\u0cb0\u0ca3",
+          "badges": []
+        },
+        "kowiki": {
+          "site": "kowiki",
+          "title": "\ubd84\uad8c\ud654",
+          "badges": []
+        },
+        "kywiki": {
+          "site": "kywiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f",
+          "badges": []
+        },
+        "lawiki": {
+          "site": "lawiki",
+          "title": "Decentralizatio",
+          "badges": []
+        },
+        "ltwiki": {
+          "site": "ltwiki",
+          "title": "Decentralizacija",
+          "badges": []
+        },
+        "mgwiki": {
+          "site": "mgwiki",
+          "title": "Fitsinjaram-pahefana",
+          "badges": []
+        },
+        "mkwiki": {
+          "site": "mkwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0458\u0430",
+          "badges": []
+        },
+        "newiki": {
+          "site": "newiki",
+          "title": "\u0935\u093f\u0915\u0947\u0928\u094d\u0926\u094d\u0930\u0940\u0915\u0930\u0923",
+          "badges": []
+        },
+        "nlwiki": {
+          "site": "nlwiki",
+          "title": "Decentralisatie",
+          "badges": []
+        },
+        "nnwiki": {
+          "site": "nnwiki",
+          "title": "Desentralisering",
+          "badges": []
+        },
+        "nowiki": {
+          "site": "nowiki",
+          "title": "Desentralisering",
+          "badges": []
+        },
+        "ocwiki": {
+          "site": "ocwiki",
+          "title": "Descentralizacion",
+          "badges": []
+        },
+        "plwiki": {
+          "site": "plwiki",
+          "title": "Decentralizacja",
+          "badges": []
+        },
+        "pswiki": {
+          "site": "pswiki",
+          "title": "\u062f \u0645\u0631\u06a9\u0632\u06cc\u062a \u0646\u0634\u062a\u0648\u0627\u0644\u06cc",
+          "badges": []
+        },
+        "ptwiki": {
+          "site": "ptwiki",
+          "title": "Descentraliza\u00e7\u00e3o",
+          "badges": []
+        },
+        "rowiki": {
+          "site": "rowiki",
+          "title": "Descentralizare",
+          "badges": []
+        },
+        "ruwiki": {
+          "site": "ruwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f",
+          "badges": []
+        },
+        "ruwikinews": {
+          "site": "ruwikinews",
+          "title": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f:\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f",
+          "badges": []
+        },
+        "shwiki": {
+          "site": "shwiki",
+          "title": "Decentralizacija",
+          "badges": []
+        },
+        "simplewiki": {
+          "site": "simplewiki",
+          "title": "Decentralization",
+          "badges": []
+        },
+        "skwiki": {
+          "site": "skwiki",
+          "title": "Decentraliz\u00e1cia",
+          "badges": []
+        },
+        "sqwiki": {
+          "site": "sqwiki",
+          "title": "Shqend\u00ebrzimi",
+          "badges": []
+        },
+        "srwiki": {
+          "site": "srwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0458\u0430",
+          "badges": []
+        },
+        "svwiki": {
+          "site": "svwiki",
+          "title": "Decentralisering",
+          "badges": []
+        },
+        "tawiki": {
+          "site": "tawiki",
+          "title": "\u0baa\u0bb0\u0bb5\u0bb2\u0bbe\u0b95\u0bcd\u0b95\u0bae\u0bcd",
+          "badges": []
+        },
+        "thwiki": {
+          "site": "thwiki",
+          "title": "\u0e01\u0e32\u0e23\u0e01\u0e23\u0e30\u0e08\u0e32\u0e22\u0e2d\u0e33\u0e19\u0e32\u0e08",
+          "badges": []
+        },
+        "tlwiki": {
+          "site": "tlwiki",
+          "title": "Desentralisasyon",
+          "badges": []
+        },
+        "trwiki": {
+          "site": "trwiki",
+          "title": "Adem-i merkeziyet\u00e7ilik",
+          "badges": []
+        },
+        "ukwiki": {
+          "site": "ukwiki",
+          "title": "\u0414\u0435\u0446\u0435\u043d\u0442\u0440\u0430\u043b\u0456\u0437\u0430\u0446\u0456\u044f",
+          "badges": []
+        },
+        "viwiki": {
+          "site": "viwiki",
+          "title": "Phi t\u1eadp trung h\u00f3a",
+          "badges": []
+        },
+        "zh_min_nanwiki": {
+          "site": "zh_min_nanwiki",
+          "title": "T\u0113-hng hun-ko\u00e2n",
+          "badges": []
+        },
+        "zh_yuewiki": {
+          "site": "zh_yuewiki",
+          "title": "\u53bb\u4e2d\u5fc3\u5316",
+          "badges": []
+        },
+        "zhwiki": {
+          "site": "zhwiki",
+          "title": "\u5730\u65b9\u5206\u6743",
+          "badges": []
+        }
+      }
+    }
+  },
+  "success": 1
+}

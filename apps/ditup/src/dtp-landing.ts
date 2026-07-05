@@ -6,19 +6,27 @@ import { customElement, query } from 'lit/decorators.js'
 import './dtp-logo.js'
 import './dtp-signin.js'
 import { reset } from './styles/preflight'
+import { localized, msg } from '@lit/localize'
+import './dtp-language-selector.js'
 
 @customElement('dtp-landing')
+@localized()
 export class DitupLanding extends LitElement {
   render() {
     return html`
+      <dtp-language-selector></dtp-language-selector>
       <h1>ditup</h1>
-      <p class="subtitle">do it together</p>
-      <p class="tagline">turn ideas into collaborative action</p>
+      <p class="subtitle">${msg('do it together')}</p>
+      <p class="tagline">${msg('turn ideas into collaborative action')}</p>
       <dtp-logo></dtp-logo>
-      <a class="button primary" href="https://docs.ditup.org">learn more</a>
-      <button class="button" @click=${this._startSignin}>sign in</button>
+      <a class="button primary" href="https://docs.ditup.org"
+        >${msg('learn more')}</a
+      >
+      <button class="button" @click=${this._startSignin}>
+        ${msg('sign in')}
+      </button>
 
-      <wa-dialog label="Sign in" id="signin-dialog">
+      <wa-dialog label=${msg('Sign in with Solid')} id="signin-dialog">
         <dtp-signin></dtp-signin>
       </wa-dialog>
     `
@@ -82,6 +90,12 @@ export class DitupLanding extends LitElement {
 
       .button.primary {
         background-color: var(--color-primary);
+      }
+
+      dtp-language-selector {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
       }
     `,
   ]

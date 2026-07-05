@@ -1,0 +1,517 @@
+{
+  "modified": "2026-06-02T19:59:39Z",
+  "type": "item",
+  "labels": {
+    "hu": { "language": "hu", "value": "alap\u00e9rtelmez\u00e9s" },
+    "ar": {
+      "language": "ar",
+      "value": "\u0648\u0636\u0639 \u0627\u0641\u062a\u0631\u0627\u0636\u064a"
+    },
+    "de": { "language": "de", "value": "Voreinstellung" },
+    "en": { "language": "en", "value": "default value" },
+    "et": { "language": "et", "value": "Vaikev\u00e4\u00e4rtus" },
+    "he": {
+      "language": "he",
+      "value": "\u05d1\u05e8\u05d9\u05e8\u05ea \u05de\u05d7\u05d3\u05dc"
+    },
+    "hy": {
+      "language": "hy",
+      "value": "\u053c\u057c\u0565\u056c\u0575\u0561\u0575\u0576"
+    },
+    "it": { "language": "it", "value": "valore di default" },
+    "ja": {
+      "language": "ja",
+      "value": "\u30c7\u30d5\u30a9\u30eb\u30c8\u5024"
+    },
+    "nl": { "language": "nl", "value": "default" },
+    "ru": {
+      "language": "ru",
+      "value": "\u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e"
+    },
+    "zh": { "language": "zh", "value": "\u9ed8\u8ba4\u9009\u9879" },
+    "pt": { "language": "pt", "value": "default" },
+    "ko": { "language": "ko", "value": "\uae30\ubcf8\uac12" },
+    "pl": { "language": "pl", "value": "ustawienia domy\u015blne" },
+    "af": { "language": "af", "value": "verstekwaarde" },
+    "vi": {
+      "language": "vi",
+      "value": "gi\u00e1 tr\u1ecb m\u1eb7c \u0111\u1ecbnh"
+    },
+    "cv": {
+      "language": "cv",
+      "value": "\u0427\u0115\u043c\u0441\u0115\u0440\u043b\u0115\u0445 \u0439\u0115\u0440\u043a\u0438\u043f\u0435"
+    },
+    "es": { "language": "es", "value": "valor por defecto" },
+    "vec": { "language": "vec", "value": "Default (informadega)" },
+    "fr": { "language": "fr", "value": "valeur par d\u00e9faut" },
+    "id": { "language": "id", "value": "nilai bawaan baku" },
+    "uk": {
+      "language": "uk",
+      "value": "\u0443\u0441\u0442\u0430\u043b\u0435\u043d\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f"
+    },
+    "eo": { "language": "eo", "value": "implicita valoro" },
+    "mk": {
+      "language": "mk",
+      "value": "\u0437\u0430\u0434\u0430\u0434\u043e\u043a"
+    },
+    "zh-tw": { "language": "zh-tw", "value": "\u9810\u8a2d\u503c" },
+    "zh-hant": { "language": "zh-hant", "value": "\u9810\u8a2d\u503c" },
+    "sl": { "language": "sl", "value": "privzeta vrednost" },
+    "cs": { "language": "cs", "value": "v\u00fdchoz\u00ed hodnota" },
+    "fa": {
+      "language": "fa",
+      "value": "\u067e\u06cc\u0634\u200c\u06af\u0632\u06cc\u062f\u0647"
+    },
+    "fi": { "language": "fi", "value": "oletusarvo" },
+    "ca": { "language": "ca", "value": "per defecte" }
+  },
+  "descriptions": {
+    "nl": { "language": "nl", "value": "software" },
+    "en": {
+      "language": "en",
+      "value": "preexisting value of a user-configurable setting of a software application, computer program or device"
+    },
+    "pt": { "language": "pt", "value": "conceito em computa\u00e7\u00e3o" },
+    "ja": {
+      "language": "ja",
+      "value": "\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u3001\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d7\u30ed\u30b0\u30e9\u30e0\u3001\u30c7\u30d0\u30a4\u30b9\u306a\u3069\u3067\u30e6\u30fc\u30b6\u30fc\u304c\u5909\u66f4\u53ef\u80fd\u306a\u8a2d\u5b9a\u306b\u4e88\u3081\u5b58\u5728\u3059\u308b\u5024"
+    },
+    "zh-tw": {
+      "language": "zh-tw",
+      "value": "\u8edf\u9ad4\u61c9\u7528\u7a0b\u5f0f\u3001\u96fb\u8166\u7a0b\u5f0f\u6216\u88dd\u7f6e\u7684\u4f7f\u7528\u8005\u53ef\u4fee\u6539\u8a2d\u5b9a\u7684\u9810\u5148\u5b58\u5728\u7684\u503c"
+    },
+    "zh": {
+      "language": "zh",
+      "value": "\u8edf\u9ad4\u61c9\u7528\u7a0b\u5f0f\u3001\u96fb\u8166\u7a0b\u5f0f\u6216\u88dd\u7f6e\u7684\u4f7f\u7528\u8005\u53ef\u4fee\u6539\u8a2d\u5b9a\u7684\u9810\u5148\u5b58\u5728\u7684\u503c"
+    },
+    "zh-hant": {
+      "language": "zh-hant",
+      "value": "\u8edf\u9ad4\u61c9\u7528\u7a0b\u5f0f\u3001\u96fb\u8166\u7a0b\u5f0f\u6216\u88dd\u7f6e\u7684\u4f7f\u7528\u8005\u53ef\u4fee\u6539\u8a2d\u5b9a\u7684\u9810\u5148\u5b58\u5728\u7684\u503c"
+    },
+    "es": {
+      "language": "es",
+      "value": "valor preexistente de un elemento configurable por el usuario de una aplicaci\u00f3n de software, programa inform\u00e1tico o dispositivo"
+    },
+    "ko": {
+      "language": "ko",
+      "value": "\uc0ac\uc6a9\uc790\uc758 \uac1c\uc785\uc5c6\uc774 \uc790\ub3d9\uc73c\ub85c \ud560\ub2f9\ub418\ub294 \uc124\uc815 \ub610\ub294 \uac12"
+    },
+    "vi": {
+      "language": "vi",
+      "value": "gi\u00e1 tr\u1ecb c\u00f3 s\u1eb5n c\u1ee7a c\u00e0i \u0111\u1eb7t ng\u01b0\u1eddi d\u00f9ng c\u00f3 th\u1ec3 c\u1ea5u h\u00ecnh \u0111\u01b0\u1ee3c c\u1ee7a \u1ee9ng d\u1ee5ng ph\u1ea7n m\u1ec1m, ch\u01b0\u01a1ng tr\u00ecnh m\u00e1y t\u00ednh ho\u1eb7c thi\u1ebft b\u1ecb"
+    },
+    "de": {
+      "language": "de",
+      "value": "Wert einer Eingabevariable oder Softwareeinstellung, falls kein anderer Wert eingegeben wird"
+    },
+    "af": {
+      "language": "af",
+      "value": "voorafbestaande waarde van 'n gebruikerkonfigureerbare instelling van 'n sagtewaretoepassing, rekenaarprogram of toestel"
+    },
+    "sl": {
+      "language": "sl",
+      "value": "vnaprej nastavljena vrednost uporabni\u0161ko nastavljive nastavitve programske aplikacije, ra\u010dunalni\u0161kega programa ali naprave."
+    },
+    "cs": {
+      "language": "cs",
+      "value": "po\u010d\u00e1te\u010dn\u00ed p\u0159ednastaven\u00e1 hodnota u\u017eivatelsky konfigurovateln\u00e9ho parametru po\u010d\u00edta\u010dov\u00e9 aplikace \u010di za\u0159\u00edzen\u00ed"
+    },
+    "id": {
+      "language": "id",
+      "value": "nilai yang sudah ada sebelumnya dari pengaturan yang dapat dikonfigurasi pengguna dari aplikasi perangkat lunak, program komputer, atau perangkat"
+    },
+    "ru": {
+      "language": "ru",
+      "value": "\u043f\u0440\u0435\u0434\u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u0438\u0437\u043c\u0435\u043d\u044f\u0435\u043c\u043e\u0439 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u043c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f, \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u044b \u0438\u043b\u0438 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430"
+    },
+    "ca": {
+      "language": "ca",
+      "value": "opci\u00f3 que ofereix un programari de manera predeterminada"
+    }
+  },
+  "aliases": {
+    "en": [
+      { "language": "en", "value": "preset" },
+      { "language": "en", "value": "factory preset" },
+      { "language": "en", "value": "default setting" },
+      { "language": "en", "value": "default option" },
+      { "language": "en", "value": "default" }
+    ],
+    "nl": [
+      { "language": "nl", "value": "defaultwaarde" },
+      { "language": "nl", "value": "verzuimwaarde" },
+      { "language": "nl", "value": "standaardwaarde" },
+      { "language": "nl", "value": "verstekwaarde" }
+    ],
+    "hy": [
+      {
+        "language": "hy",
+        "value": "\u0579\u0568\u0576\u057f\u0580\u0578\u057e\u056b"
+      }
+    ],
+    "id": [
+      { "language": "id", "value": "praatur" },
+      { "language": "id", "value": "praatur pabrik" },
+      { "language": "id", "value": "bawaan" }
+    ],
+    "mk": [
+      {
+        "language": "mk",
+        "value": "\u043f\u043e \u043e\u0441\u043d\u043e\u0432\u043d\u043e"
+      }
+    ],
+    "ja": [
+      { "language": "ja", "value": "\u521d\u671f\u5024" },
+      { "language": "ja", "value": "\u30c7\u30d5\u30a9\u30eb\u30c8" },
+      { "language": "ja", "value": "\u65e2\u5b9a\u5024" }
+    ],
+    "de": [{ "language": "de", "value": "Default" }],
+    "it": [
+      { "language": "it", "value": "default" },
+      { "language": "it", "value": "valore preimpostato" },
+      { "language": "it", "value": "valore predefinito" }
+    ],
+    "sl": [
+      { "language": "sl", "value": "prednastavitev" },
+      { "language": "sl", "value": "tovarni\u0161ka nastavitev" },
+      { "language": "sl", "value": "privzeta nastavitev" },
+      { "language": "sl", "value": "privzeta mo\u017enost" },
+      { "language": "sl", "value": "privzeta izbira" },
+      { "language": "sl", "value": "privzeta opcija" },
+      { "language": "sl", "value": "prednastavljeno stanje" },
+      { "language": "sl", "value": "privzeto stanje" },
+      { "language": "sl", "value": "predobstoje\u010da vrednost" },
+      { "language": "sl", "value": "predobstoje\u010de stanje" }
+    ],
+    "cs": [
+      { "language": "cs", "value": "implicitn\u00ed hodnota" },
+      { "language": "cs", "value": "default" },
+      { "language": "cs", "value": "p\u0159ednastaven\u00e1 hodnota" },
+      {
+        "language": "cs",
+        "value": "po\u010d\u00e1te\u010dn\u00ed hodnota"
+      },
+      { "language": "cs", "value": "standardn\u00ed hodnota" },
+      { "language": "cs", "value": "tov\u00e1rn\u00ed nastaven\u00ed" }
+    ],
+    "fa": [
+      { "language": "fa", "value": "\u062f\u06cc\u0641\u0627\u0644\u062a" },
+      {
+        "language": "fa",
+        "value": "\u067e\u06cc\u0634\u200c\u0641\u0631\u0636"
+      }
+    ],
+    "zh": [
+      { "language": "zh", "value": "\u9ed8\u8ba4\u503c" },
+      { "language": "zh", "value": "\u9ed8\u8ba4\u914d\u7f6e" }
+    ]
+  },
+  "claims": {
+    "P646": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P646",
+          "hash": "e7eb97695124c2ac43225dcb40735bd35d2174ce",
+          "datavalue": { "value": "/m/03t94k", "type": "string" },
+          "datatype": "external-id"
+        },
+        "type": "statement",
+        "id": "Q281782$901C8D17-5040-4B81-B408-22D08A206F7E",
+        "rank": "normal",
+        "references": [
+          {
+            "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+            "snaks": {
+              "P248": [
+                {
+                  "snaktype": "value",
+                  "property": "P248",
+                  "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 15241312,
+                      "id": "Q15241312"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ],
+              "P577": [
+                {
+                  "snaktype": "value",
+                  "property": "P577",
+                  "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2013-10-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "snaks-order": ["P248", "P577"]
+          }
+        ]
+      }
+    ],
+    "P1482": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1482",
+          "hash": "f2a07685e3f569da0032ec7fb8764bc352c30768",
+          "datavalue": {
+            "value": "https://stackoverflow.com/tags/default-value",
+            "type": "string"
+          },
+          "datatype": "url"
+        },
+        "type": "statement",
+        "id": "Q281782$12A2AD0E-56B7-443C-BE33-BC6EAB6B233B",
+        "rank": "normal"
+      }
+    ],
+    "P279": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P279",
+          "hash": "a96f040b3ce01067b5a9dd22e494966292ba36cd",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 1196827,
+              "id": "Q1196827"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$b9eb4553-4619-99a3-1808-7d01859a2b46",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P279",
+          "hash": "2cf0d4d28d4e82158542ff7630d9653fea5bff6f",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 67151552,
+              "id": "Q67151552"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$67fbc070-4a8a-c8c1-63a3-6bc6a1c4a75d",
+        "rank": "normal"
+      }
+    ],
+    "P31": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "5eee79f7b454b76d96218fa7d64a6c8c3fad52a3",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 11028,
+              "id": "Q11028"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$645a1edd-427b-e437-debf-68974cf3d3d9",
+        "rank": "normal"
+      },
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P31",
+          "hash": "7f418c4687aedff146b95420cfa8c00589dd3217",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 71533077,
+              "id": "Q71533077"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$d22e5adb-478c-eee6-f15a-1a5f1c9ba807",
+        "rank": "normal"
+      }
+    ],
+    "P1269": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P1269",
+          "hash": "3330732082485cbc0723148074f372747c7f7359",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 7397,
+              "id": "Q7397"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$6835547e-41f3-8957-f662-bea707f8f8f5",
+        "rank": "normal"
+      }
+    ],
+    "P13044": [
+      {
+        "mainsnak": {
+          "snaktype": "value",
+          "property": "P13044",
+          "hash": "de8425d43221e16bbec3243cf1f8ffa29095286a",
+          "datavalue": {
+            "value": {
+              "entity-type": "item",
+              "numeric-id": 1781447,
+              "id": "Q1781447"
+            },
+            "type": "wikibase-entityid"
+          },
+          "datatype": "wikibase-item"
+        },
+        "type": "statement",
+        "id": "Q281782$C8E4ACB2-7100-4948-A027-BA4A1CEEC3B2",
+        "rank": "normal"
+      }
+    ]
+  },
+  "sitelinks": {
+    "afwiki": { "site": "afwiki", "title": "Verstekwaarde", "badges": [] },
+    "arwiki": {
+      "site": "arwiki",
+      "title": "\u0648\u0636\u0639 \u0627\u0641\u062a\u0631\u0627\u0636\u064a",
+      "badges": []
+    },
+    "cawiki": { "site": "cawiki", "title": "Per defecte", "badges": [] },
+    "cvwiki": {
+      "site": "cvwiki",
+      "title": "\u0427\u0115\u043c\u0441\u0115\u0440\u043b\u0115\u0445 \u0439\u0115\u0440\u043a\u0438\u043f\u0435",
+      "badges": []
+    },
+    "dewiki": { "site": "dewiki", "title": "Voreinstellung", "badges": [] },
+    "enwiki": {
+      "site": "enwiki",
+      "title": "Default (computer science)",
+      "badges": []
+    },
+    "eswiki": {
+      "site": "eswiki",
+      "title": "Valor por defecto",
+      "badges": []
+    },
+    "etwiki": {
+      "site": "etwiki",
+      "title": "Vaikev\u00e4\u00e4rtus",
+      "badges": []
+    },
+    "fawiki": {
+      "site": "fawiki",
+      "title": "\u067e\u06cc\u0634\u200c\u06af\u0632\u06cc\u062f\u0647",
+      "badges": []
+    },
+    "frwiki": {
+      "site": "frwiki",
+      "title": "Valeur par d\u00e9faut",
+      "badges": []
+    },
+    "hewiki": {
+      "site": "hewiki",
+      "title": "\u05d1\u05e8\u05d9\u05e8\u05ea \u05de\u05d7\u05d3\u05dc",
+      "badges": []
+    },
+    "huwiki": {
+      "site": "huwiki",
+      "title": "Alap\u00e9rtelmez\u00e9s",
+      "badges": []
+    },
+    "hywiki": {
+      "site": "hywiki",
+      "title": "\u053c\u057c\u0565\u056c\u0575\u0561\u0575\u0576",
+      "badges": []
+    },
+    "idwiki": {
+      "site": "idwiki",
+      "title": "Baku (ilmu komputer)",
+      "badges": []
+    },
+    "itwiki": {
+      "site": "itwiki",
+      "title": "Default (informatica)",
+      "badges": []
+    },
+    "jawiki": {
+      "site": "jawiki",
+      "title": "\u30c7\u30d5\u30a9\u30eb\u30c8 (\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf)",
+      "badges": []
+    },
+    "kowiki": {
+      "site": "kowiki",
+      "title": "\uae30\ubcf8\uac12",
+      "badges": []
+    },
+    "nlwiki": {
+      "site": "nlwiki",
+      "title": "Default (software)",
+      "badges": []
+    },
+    "plwiki": {
+      "site": "plwiki",
+      "title": "Ustawienia domy\u015blne",
+      "badges": []
+    },
+    "ptwiki": {
+      "site": "ptwiki",
+      "title": "Default (computa\u00e7\u00e3o)",
+      "badges": []
+    },
+    "ruwiki": {
+      "site": "ruwiki",
+      "title": "\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+      "badges": []
+    },
+    "vecwiki": {
+      "site": "vecwiki",
+      "title": "Default (informadega)",
+      "badges": []
+    },
+    "viwiki": {
+      "site": "viwiki",
+      "title": "M\u1eb7c \u0111\u1ecbnh (khoa h\u1ecdc m\u00e1y t\u00ednh)",
+      "badges": []
+    },
+    "zhwiki": {
+      "site": "zhwiki",
+      "title": "\u9ed8\u8ba4\u9009\u9879",
+      "badges": []
+    }
+  }
+}
