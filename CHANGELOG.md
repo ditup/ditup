@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Docs
 
+- Add localization docs.
 - Start documentation for `@ditup/web-components`.
 
 ## [0.0.1] - 2026-07-04

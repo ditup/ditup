@@ -38,8 +38,14 @@ export default defineConfig({
         text: 'Web Components',
         link: '/web-components',
         items: [
-          { text: 'topic', link: '/web-components/topic' },
-          { text: 'name', link: '/web-components/name' },
+          {
+            text: 'Components',
+            items: [
+              { text: 'topic', link: '/web-components/components/topic' },
+              { text: 'name', link: '/web-components/components/name' },
+            ],
+          },
+          { text: 'Localization', link: '/web-components/localization' },
         ],
       },
     ],
